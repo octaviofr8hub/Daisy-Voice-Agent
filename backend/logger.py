@@ -19,6 +19,7 @@ class ConversationLogger:
             "state": state,
             "field": field
         })
+        
 
     # Guarda el log en un archivo JSON
     def save(self):

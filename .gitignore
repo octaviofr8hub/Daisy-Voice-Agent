@@ -6,3 +6,4 @@ backend/*.sqlite
 venv/
 backend/*.json
 backend/*.env
+backend/conversation_logs/
