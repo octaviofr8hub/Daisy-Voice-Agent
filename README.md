@@ -108,7 +108,6 @@ Despues de hacer esto lo siguiente es ir a Active Numbers, elegir el numero que 
 ### Configuramos las reglas:
 Cree un archivo JSON temporal con la configuración de su troncal entrante, incluido el número de teléfono que compró a su proveedor de troncal SIP.
 ```json
-inbound-trunk.json
 {
   "trunk": {
     "name": "My inbound trunk",
@@ -125,7 +124,6 @@ Ahora configuramos una regla de despacho para aceptar llamadas entrantes en una 
 Cree un archivo JSON temporal con la configuración de su regla de despacho. Este ejemplo crea una regla de despacho que asigna a cada usuario a una sala única generada aleatoriamente con el prefijo "name" call-. Para muchas aplicaciones, esta es la única configuración necesaria.
 
 ```json
-# dispatch-rule.json
 {
     "name" : "Daisy Demo",
     "trunk_ids" : ["<your-livekit-trunk-id>"],
