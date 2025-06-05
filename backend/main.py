@@ -1,75 +1,16 @@
 from __future__ import annotations
+import asyncio
 from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
 from livekit.agents.multimodal import MultimodalAgent
 from livekit.plugins import openai
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
-#from state_machine import ConversationStateMachine
+
 from daisy_fsm import ConversationStateMachine
-from logger import ConversationLogger
+#from logger import ConversationLogger
 from daisy_prompts import INSTRUCTIONS
 
 import logging
-
-
-'''
-# Punto de entrada principal de la aplicación
-async def entrypoint(ctx: JobContext):
-    await ctx.connect(auto_subscribe=AutoSubscribe.SUBSCRIBE_ALL)
-    await ctx.wait_for_participant()
-    
-    # Configura el modelo de OpenAI para la interacción en tiempo real
-    openai_realtime_model = openai.realtime.RealtimeModel(  
-        model="gpt-4o-realtime-preview",
-        instructions=INSTRUCTIONS,
-        voice="shimmer",
-        temperature=0.8,
-        modalities=["audio", "text"]
-    )
-    # Inicializa el contexto de funciones del asistente
-    assistant_fnc = DaisyAssistantFnc()
-    # Crea el agente multimodal con el modelo y el contexto de funciones
-    #assistant = MultimodalAgent(model=model, fnc_ctx=assistant_fnc)
-    assistant = MultimodalAgent(model=openai_realtime_model, fnc_ctx=assistant_fnc)
-    
-    # Workaround para evitar errores de playout
-    #def _on_playout_started(*args, **kwargs):
-    #    pass
-    #def _on_playout_stopped(*args, **kwargs):
-    #    pass
-    #assistant._on_playout_started = _on_playout_started
-    #assistant._on_playout_stopped = _on_playout_stopped
-    
-    # Inicia el agente en la sala
-    assistant.start(ctx.room)
-    
-    # Obtiene la primera sesión del modelo
-    session = openai_realtime_model.sessions[0]
-    
-    # Inicializa el logger para registrar la conversación
-    logger = ConversationLogger()
-    # Inicializa la máquina de estados con la sesión y el logger
-    daisy_state_machine = ConversationStateMachine(session, logger)
-    
-    # Envía el mensaje de bienvenida
-    await daisy_state_machine.send_welcome()
-    
-    # Maneja mensajes de voz del usuario
-    @session.on("user_speech_committed")
-    async def on_user_speech_committed(msg: llm.ChatMessage):
-        await daisy_state_machine.process_user_input(msg)
-
-    # Maneja mensajes de texto del usuario
-    #@assistant.on("text_stream")
-    #async def on_text_stream(msg: llm.ChatMessage):
-    #    if isinstance(msg.content, list):
-    #        msg.content = "\n".join("[image]" if isinstance(x, llm.ChatImage) else x for x in msg.content)
-    #    await daisy_state_machine.process_user_input(msg)
-
-# Ejecuta la aplicación con el entrypoint definido
-if __name__ == "__main__":
-    cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint))
-'''
 
 
 # Configura el logger para main
@@ -100,8 +41,9 @@ async def entrypoint(ctx: JobContext):
         instructions=INSTRUCTIONS,
         voice="shimmer",
         temperature=0.8,
-        modalities=["audio", "text"]
+        modalities=["audio", "text"],
     )
+    
 
     # Inicializa el contexto de funciones del asistente
     assistant_fnc = DaisyAssistantFnc()
@@ -123,12 +65,8 @@ async def entrypoint(ctx: JobContext):
     session = openai_realtime_model.sessions[0]
     logger.debug("Sesión obtenida")
 
-    # Inicializa el logger para registrar la conversación
-    logger_conversation = ConversationLogger()
-    logger.debug("ConversationLogger inicializado")
-
     # Inicializa la máquina de estados con la sesión, logger y contexto de funciones
-    daisy_state_machine = ConversationStateMachine(session, logger_conversation, assistant_fnc)
+    daisy_state_machine = ConversationStateMachine(session, assistant_fnc)
     logger.debug("ConversationStateMachine inicializada")
 
     # Envía el mensaje de bienvenida
@@ -138,16 +76,15 @@ async def entrypoint(ctx: JobContext):
     except Exception as e:
         logger.error(f"Error al enviar mensaje de bienvenida: {str(e)}")
 
-    # Maneja mensajes de voz del usuario
-    @session.on("user_speech_committed")
-    async def on_user_speech_committed(msg: llm.ChatMessage):
+    def on_user_speech_committed(msg: llm.ChatMessage):
         logger.debug(f"Evento user_speech_committed recibido: {msg.content}")
         try:
             if isinstance(msg.content, list):
                 msg.content = "\n".join("[image]" if isinstance(x, llm.ChatImage) else x for x in msg.content)
-            await daisy_state_machine.process_user_input(msg)
+            asyncio.create_task(daisy_state_machine.process_user_input(msg))
         except Exception as e:
             logger.error(f"Error al procesar mensaje de voz: {str(e)}")
+    session.on("user_speech_committed", on_user_speech_committed)
 
 if __name__ == "__main__":
     logger.debug("Ejecutando aplicación")

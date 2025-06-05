@@ -2,11 +2,10 @@ from livekit.agents import llm
 from config import FIELDS, FIELD_ORDER, NUM_FIELDS, WAKE_WORDS
 from utils import clean_user_text, is_repeat_request, is_off_topic
 from daisy_prompts import WELCOME_MESSAGE, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
-from logger import ConversationLogger
 from daisy_assistant_fnc import DaisyAssistantFnc
 import time
 import logging
-
+from unidecode import unidecode
 
 # Configura el logger para state_machine
 logging.basicConfig(
@@ -18,21 +17,19 @@ logger = logging.getLogger(__name__)
 
 # Clase que maneja la máquina de estados de la conversación
 class ConversationStateMachine:
-    def __init__(self, session, logger_fnc: ConversationLogger, assistant_fnc: DaisyAssistantFnc):
+    def __init__(self, session, assistant_fnc: DaisyAssistantFnc):
         # Almacena la sesión de LiveKit
         self.session = session
-        # Almacena el logger para registrar la conversación
-        self.logger = logger_fnc
-        # Almacena el contexto de funciones
         self.assistant_fnc = assistant_fnc
         # Estado inicial de la conversación
         self.state = {
             "state": "waiting_wake",
             "idx": 0,
             "fields": {k: None for k, _ in FIELDS},
-            "route": "Ruta desconocida"
+            "route": "Ruta desconocida",
+            "confirmation_attempts": 0  # Contador de intentos de confirmación
         }
-        logger.debug(f"Inicializando máquina de estados para sesión {self.logger.session_id}")
+        logger.debug(f"Inicializando máquina de estados para sesión ")
 
     async def send_welcome(self):
         """
@@ -45,7 +42,6 @@ class ConversationStateMachine:
                 content=WELCOME_MESSAGE
             )
         )
-        self.logger.log_message("assistant", WELCOME_MESSAGE, self.state["state"])
         self.session.response.create()
 
     async def process_user_input(self, msg: llm.ChatMessage):
@@ -61,13 +57,8 @@ class ConversationStateMachine:
         except Exception as e:
             logger.error(f"Error al procesar contenido del mensaje: {str(e)}")
             return
-
         user_text = msg.content
         user_text_lower = user_text.lower()
-        # Registra la entrada del usuario
-        current_field = FIELD_ORDER[self.state["idx"]] if self.state["state"] in ["asking", "confirm"] else None
-        self.logger.log_message("user", user_text, self.state["state"], current_field)
-
         # Maneja solicitudes de repetición
         if is_repeat_request(user_text_lower):
             await self.handle_repeat()
@@ -83,14 +74,12 @@ class ConversationStateMachine:
             await self.handle_asking(msg.content)
         elif self.state["state"] == "confirm":
             await self.handle_confirm(user_text_lower)
-
         end_time = time.time()
         latency_ms = (end_time - start_time) * 1000
         logger.debug(f"Latencia del LLM ({self.state['state']}): {latency_ms:.2f} ms")
 
     async def handle_repeat(self):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        current_field = FIELD_ORDER[self.state["idx"]]
         repeat_message = REPEAT_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
         self.session.conversation.item.create(
             llm.ChatMessage(
@@ -98,12 +87,10 @@ class ConversationStateMachine:
                 content=repeat_message
             )
         )
-        self.logger.log_message("system", repeat_message, self.state["state"], current_field)
         self.session.response.create()
 
     async def handle_off_topic(self):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        current_field = FIELD_ORDER[self.state["idx"]]
         off_topic_message = OFF_TOPIC_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
         self.session.conversation.item.create(
             llm.ChatMessage(
@@ -111,7 +98,6 @@ class ConversationStateMachine:
                 content=off_topic_message
             )
         )
-        self.logger.log_message("system", off_topic_message, self.state["state"], current_field)
         self.session.response.create()
 
     async def handle_waiting_wake(self, user_text_lower: str):
@@ -126,7 +112,6 @@ class ConversationStateMachine:
                     content=permission_request
                 )
             )
-            self.logger.log_message("assistant", permission_request, self.state["state"])
             self.session.response.create()
 
     async def handle_waiting_permission(self, user_text: str):
@@ -138,12 +123,10 @@ class ConversationStateMachine:
                 content=permission_prompt
             )
         )
-        self.logger.log_message("system", permission_prompt, self.state["state"])
         intent = "aceptar_llamada"  # Placeholder, debe venir del modelo
         if intent == "aceptar_llamada":
             logger.debug(f"FSM: Transición a asking")
             self.state["state"] = "asking"
-            current_field = FIELD_ORDER[self.state["idx"]]
             ask_message = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 remaining=NUM_FIELDS - self.state["idx"]
@@ -154,7 +137,6 @@ class ConversationStateMachine:
                     content=ask_message
                 )
             )
-            self.logger.log_message("assistant", ask_message, self.state["state"], current_field)
             self.session.response.create()
         elif intent == "rechazar_llamada":
             logger.debug(f"FSM: Transición a ended")
@@ -165,9 +147,7 @@ class ConversationStateMachine:
                     content=end_message
                 )
             )
-            self.logger.log_message("assistant", end_message, self.state["state"])
             self.state["state"] = "ended"
-            self.logger.log_message("system", f"Conversación finalizada sin datos completos", self.state["state"])
             await self.assistant_fnc.save_driver_data()  # Guardar JSON incluso si se rechaza
 
     async def handle_asking(self, user_text: str):
@@ -201,26 +181,23 @@ class ConversationStateMachine:
                         content=ask_message
                     )
                 )
-                self.logger.log_message("assistant", ask_message, self.state["state"], current_field)
                 self.session.response.create()
                 return
-
-            # Registra el mensaje de confirmación
-            repeat_message = CONFIRM_MESSAGE.format(
+            # Confirmación con formato más claro para placas
+            confirm_message = CONFIRM_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
-                value=cleaned
+                value=" ".join(cleaned) if current_field in ("placas_tractor", "placas_trailer") else cleaned
             )
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
-                    content=repeat_message
+                    content=confirm_message
                 )
             )
-            self.logger.log_message("assistant", repeat_message, self.state["state"], current_field)
-            self.session.response.create()
-            # Almacena el dato temporalmente en fields para el flujo
             self.state["fields"][current_field] = cleaned
             self.state["state"] = "confirm"
+            self.state["confirmation_attempts"] = 0
+            self.session.response.create()
         else:
             logger.debug(f"FSM: Respuesta inválida, repitiendo pregunta para {current_field}")
             ask_message = ASK_MESSAGE.format(
@@ -233,13 +210,15 @@ class ConversationStateMachine:
                     content=ask_message
                 )
             )
-            self.logger.log_message("assistant", ask_message, self.state["state"], current_field)
             self.session.response.create()
 
     async def handle_confirm(self, user_text_lower: str):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        if user_text_lower not in {"no", "incorrecto"}:
+        current_field = FIELD_ORDER[self.state["idx"]]
+        self.state["confirmation_attempts"] += 1
+        if user_text_lower in {"sí", "si", "correcto", "sí está bien", "está bien"}:
             self.state["idx"] += 1
+            self.state["confirmation_attempts"] = 0
             if self.state["idx"] >= NUM_FIELDS:
                 logger.debug(f"FSM: Todos los campos recolectados, transición a ended")
                 end_message = "¡Gracias por los datos! Todo listo, ¡buen viaje!"
@@ -249,9 +228,7 @@ class ConversationStateMachine:
                         content=end_message
                     )
                 )
-                self.logger.log_message("assistant", end_message, self.state["state"])
                 self.state["state"] = "ended"
-                self.logger.log_message("system", f"Collected fields: {self.state['fields']}", self.state["state"])
                 try:
                     await self.assistant_fnc.save_driver_data()  # Guardar JSON con DaisyAssistantFnc
                 except Exception as e:
@@ -269,11 +246,10 @@ class ConversationStateMachine:
                     content=ask_message
                 )
             )
-            self.logger.log_message("assistant", ask_message, self.state["state"], FIELD_ORDER[self.state["idx"]])
             self.session.response.create()
-        else:
-            logger.debug(f"FSM: Dato rechazado, repitiendo pregunta para {FIELD_ORDER[self.state['idx']]}")
-            self.state["fields"][FIELD_ORDER[self.state["idx"]]] = None
+        elif user_text_lower in {"no", "incorrecto", "no está bien"} or self.state["confirmation_attempts"] >= 3:
+            logger.debug(f"FSM: Dato rechazado o demasiados intentos, repitiendo pregunta para {current_field}")
+            self.state["fields"][current_field] = None
             self.state["state"] = "asking"
             ask_message = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
@@ -285,5 +261,17 @@ class ConversationStateMachine:
                     content=ask_message
                 )
             )
-            self.logger.log_message("assistant", ask_message, self.state["state"], FIELD_ORDER[self.state["idx"]])
+            self.session.response.create()
+        else:
+            logger.debug(f"FSM: Respuesta ambigua, pidiendo confirmación de nuevo para {current_field}")
+            confirm_message = CONFIRM_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                value=" ".join(self.state["fields"][current_field]) if current_field in ("placas_tractor", "placas_trailer") else self.state["fields"][current_field]
+            )
+            self.session.conversation.item.create(
+                llm.ChatMessage(
+                    role="assistant",
+                    content=confirm_message
+                )
+            )
             self.session.response.create()

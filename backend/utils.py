@@ -4,6 +4,23 @@ import json
 from datetime import datetime
 import config
 
+from unidecode import unidecode
+
+NUMBER_WORDS = {
+    'cero': '0', 'uno': '1', 'dos': '2', 'tres': '3', 'cuatro': '4',
+    'cinco': '5', 'seis': '6', 'siete': '7', 'ocho': '8', 'nueve': '9',
+    'diez': '10', 'once': '11', 'doce': '12', 'trece': '13', 'catorce': '14',
+    'quince': '15', 'dieciseis': '16', 'diecisiete': '17', 'dieciocho': '18', 'diecinueve': '19',
+    'veinte': '20'
+}
+
+def words_to_digits(text: str) -> str:
+    """Convierte números escritos en palabras a dígitos."""
+    text = unidecode(text.lower())
+    for word, digit in NUMBER_WORDS.items():
+        text = text.replace(word, digit)
+    return text
+
 # Verifica si el texto del usuario contiene una solicitud de repetición
 def is_repeat_request(text: str) -> bool:
     text = text.lower()
@@ -14,38 +31,30 @@ def is_off_topic(text: str) -> bool:
     text = text.lower()
     return any(trigger in text for trigger in config.OFF_TOPIC_TRIGGERS)
 
-# Limpia y formatea el texto del usuario según el campo que se está recolectando
 def clean_user_text(raw: str, field: str) -> str:
-    raw = raw.strip()
+    raw = unidecode(raw.strip().lower())
+    raw = words_to_digits(raw)  # Convertir palabras numéricas a dígitos
+
     if field == "nombre_operador":
-        # Extrae el nombre después de frases como "mi nombre es" y lo formatea
         m = re.search(r"(?:mi nombre es|me llamo|soy|el nombre es)\s+(.+)", raw, re.IGNORECASE)
         name = m.group(1).strip() if m else raw
         return " ".join(p.capitalize() for p in name.split())
+    
     elif field in ("numero_tractor", "numero_trailer"):
-        # Extrae solo dígitos para números de tractor o tráiler
-        digits = re.findall(r"\d", raw)
+        # Extraer números, permitir guiones o espacios (ej. "123-456" o "123 456")
+        digits = re.findall(r"\d+", raw)
         if digits:
-            return "".join(digits)
+            return "".join(digits)  # Unir todos los dígitos
         return raw
+    
     elif field in ("placas_tractor", "placas_trailer"):
-        # Extrae caracteres alfanuméricos y los convierte a mayúsculas para placas
+        # Formato típico de placas mexicanas: 3 letras + 3-4 dígitos (ABC1234) o 2 letras + 3 dígitos + 2 letras (AB123CD)
         plate = re.sub(r"[^A-Za-z0-9]", "", raw).upper()
-        return plate
+        # Validar formato de placa
+        if re.match(r"^[A-Z]{2,3}\d{3,4}$|^[A-Z]{2}\d{3}[A-Z]{2}$", plate):
+            return plate
+        # Si no coincide, intentar extraer solo la parte alfanumérica relevante
+        match = re.search(r"[A-Z0-9]{5,7}", plate)
+        return match.group(0) if match else plate
+    
     return raw
-
-# Guarda la conversación en un archivo JSON
-def save_conversation_to_json(conversation_log, session_id: str):
-    try:
-        output_dir = "conversation_logs"
-        # Crea el directorio si no existe
-        os.makedirs(output_dir, exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"{output_dir}/conversation_{session_id}_{timestamp}.json"
-        # Escribe el log en un archivo JSON
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(conversation_log, f, ensure_ascii=False, indent=2)
-        print(f"Conversación guardada en {filename}")
-    except Exception as e:
-        # Registra cualquier error al intentar guardar el archivo
-        print(f"Error al guardar el JSON: {str(e)}")

@@ -1,9 +1,15 @@
+'''
+Primera version del agente de voz
+'''
+
+
+
 from __future__ import annotations
 from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
 from livekit.agents.multimodal import MultimodalAgent
 from livekit.plugins import openai
 from dotenv import load_dotenv
-from api import AssistantFnc
+#from api import AssistantFnc
 from daisy_prompts import WELCOME_MESSAGE, INSTRUCTIONS, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
 import re
 import time
@@ -76,8 +82,9 @@ async def entrypoint(ctx: JobContext):
         temperature=0.8,
         modalities=["audio", "text"]
     )
-    assistant_fnc = AssistantFnc()
-    assistant = MultimodalAgent(model=model, fnc_ctx=assistant_fnc)
+    #assistant_fnc = AssistantFnc()
+    #assistant = MultimodalAgent(model=model, fnc_ctx=assistant_fnc)
+    assistant = MultimodalAgent(model=model)
     
     # Workaround para errores de playout
     def _on_playout_started(*args, **kwargs):

@@ -112,7 +112,7 @@ class DaisyAssistantFnc(llm.FunctionContext):
         self._log_message("system", f"Placas de tráiler registradas: {placas}")
         return f"Placas de tráiler registradas: {placas}"
 
-    @llm.ai_callable(description="Guarda todos los datos recolectados en un archivo JSON")
+    @llm.ai_callable(description="Guarda todos los datos recolectados en un archivo JSON (Vuelve a decirle al usuario los datos que guardaste y confirmale que los guardaste)")
     def save_driver_data(self):
         """Guarda todos los datos recolectados en un archivo JSON."""
         logger.info("Guardando datos recolectados en JSON")
