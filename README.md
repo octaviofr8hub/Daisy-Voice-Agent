@@ -76,20 +76,39 @@ En la carpeta raiz ejecutar la siguiente linea:
 pip install -r requirements.txt
 ```
 
-### Configuramos las reglas:
+### 5. Instalacion de CLI de Livekit
+Accedemos a la documentacion (https://docs.livekit.io/home/cli/cli-setup/) para instalar el CLI de livekit:
 
-```json
-{
-    "name" : "Daisy Demo",
-    "trunk_ids" : [""],
-    "rule": {
-        "dispatchRuleIndividual": {
-            "roomPrefix": "call-"
-        }
-    }
-}   
+```bash
+winget install LiveKit.LiveKitCLI # En windows
+brew update && brew install livekit-cli # En MacOS
+curl -sSL https://get.livekit.io/cli | bash # En sistemas UNIX
 ```
+
+### 6. Autenticarse en LiveKit Cloud
+
+LiveKit Cloud requiere autenticacion de la CLI en el proyecto en la nube para ùsar una `LIVEKIT_API_KEY` y una  `LIVEKIT_API_SECRET`. Esto permite usar la CLI sin tener que proporcionar manualmente las credenciales cada vez.
+
+```bash
+lk cloud auth
+```
+
+### 7. Conectar con Twilio
+En LiveKit Cloud de nuestro proyecto, en el apartado de Settings > General > SIP URI, ahi vendra un codigo como el siguiente:
+```bash
+sip:9b8ea87992c.sip.livekit.cloud
+```
+
+Una vez que hayamos copiado el codigo anterior, debemos ir a Twilio (para esto ya debemos de tener un numero comprado), iremos a Elastic Trunk > Create New SIP Trunk lo creamos, para posteriormente ir a la apartado de Origination > Add origination e ingresar los campos de esta manera: 
+
+![image](https://github.com/user-attachments/assets/1516d753-cec2-46d5-8056-ac315360112a)
+
+Despues de hacer esto lo siguiente es ir a Active Numbers, elegir el numero que tengamos y configurar el sip trunk recien creado
+
+### Configuramos las reglas:
+Cree un archivo JSON temporal con la configuración de su troncal entrante, incluido el número de teléfono que compró a su proveedor de troncal SIP.
 ```json
+inbound-trunk.json
 {
   "trunk": {
     "name": "My inbound trunk",
@@ -97,3 +116,33 @@ pip install -r requirements.txt
   }
 }
 ```
+Una vez lo haya creado, use la CLI de Livekit
+```bash
+lk sip inbound create inbound-trunk.json
+```
+Ahora configuramos una regla de despacho para aceptar llamadas entrantes en una sala LiveKit.
+
+Cree un archivo JSON temporal con la configuración de su regla de despacho. Este ejemplo crea una regla de despacho que asigna a cada usuario a una sala única generada aleatoriamente con el prefijo "name" call-. Para muchas aplicaciones, esta es la única configuración necesaria.
+
+```json
+# dispatch-rule.json
+{
+    "name" : "Daisy Demo",
+    "trunk_ids" : ["<your-livekit-trunk-id>"],
+    "rule": {
+        "dispatchRuleIndividual": {
+            "roomPrefix": "call-"
+        }
+    }
+}   
+```
+Una vez que lo hayamos creado ejecutamos el siguiente comando:
+```bash
+lk sip dispatch create dispatch-rule.json
+```
+
+Por ultimo, solo queda correr el servidor para ello se usa la siguiente instruccion:
+```bash
+python main.py dev
+```
+
