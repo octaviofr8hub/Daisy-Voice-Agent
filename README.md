@@ -35,3 +35,46 @@
 ### **Punto 6: Voice Agent → Livekit Cloud (Backend → Livekit Cloud)**
 - Descripción: El Voice Agent envía la respuesta generada (convertida a audio mediante OpenAI Realtime API) a LiveKit Cloud para que se transmita al usuario.
 - Propósito: Enviar la respuesta del agente al usuario a través del streaming de audio en tiempo real.
+
+# Instalación
+
+## Requisitos Previos
+
+- **Python 3.10 o superior**
+- Una cuenta de **Twilio** con un número de teléfono (habilitado para voz)
+- Una cuenta de **LiveKit Cloud**
+- Una cuenta de **OpenAI** con acceso a la Realtime API
+
+### 1. Clonar el repositorio
+
+```bash
+git clone <url-de-tu-repositorio>
+cd <carpeta-de-tu-proyecto>
+```
+
+### 2. Configura un Entorno Virtual
+Crea y activa un entorno virtual para mantener las dependencias aisladas.
+
+```bash
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
+
+### 3. Configurar las variables de entorno
+Crear un archivo `.env` y definir las siguientes variables:
+
+```bash
+LIVEKIT_URL=""
+LIVEKIT_API_KEY=""
+LIVEKIT_API_SECRET=""
+OPENAI_API_KEY=""
+```
+
+### 4. Instalar las dependencias:
+En la carpeta raiz ejecutar la siguiente linea:
+```bash
+pip install -r requirements.txt
+```
+
+
+
