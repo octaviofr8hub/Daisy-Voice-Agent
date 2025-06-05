@@ -35,7 +35,3 @@
 ### **Punto 6: Voice Agent → Livekit Cloud (Backend → Livekit Cloud)**
 - Descripción: El Voice Agent envía la respuesta generada (convertida a audio mediante OpenAI Realtime API) a LiveKit Cloud para que se transmita al usuario.
 - Propósito: Enviar la respuesta del agente al usuario a través del streaming de audio en tiempo real.
-
-### **Punto 7: Livekit Cloud → Twilio Call Service (Livekit Cloud → Twilio)**
-- Descripción: LiveKit Cloud envía el audio de la respuesta del Voice Agent a Twilio Call Service, que lo transmite de vuelta al usuario a través de la llamada activa.
-- Propósito: Completar el ciclo de comunicación, entregando la respuesta al usuario.
