@@ -76,5 +76,24 @@ En la carpeta raiz ejecutar la siguiente linea:
 pip install -r requirements.txt
 ```
 
+### Configuramos las reglas:
 
-
+```json
+{
+    "name" : "Daisy Demo",
+    "trunk_ids" : [""],
+    "rule": {
+        "dispatchRuleIndividual": {
+            "roomPrefix": "call-"
+        }
+    }
+}   
+```
+```json
+{
+  "trunk": {
+    "name": "My inbound trunk",
+    "numbers": ["+1234567890"]
+  }
+}
+```
