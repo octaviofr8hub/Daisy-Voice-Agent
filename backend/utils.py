@@ -109,7 +109,7 @@ def clean_user_text(raw: str, current_field: str) -> str:
     
     elif current_field == "eta":
         # Preprocesar ETA
-        raw = re.sub(r"\b(a las|alrededor de|como a las|horas|de la tarde|de la mañana)\b", "", raw, flags=re.IGNORECASE)
+        raw = re.sub(r"\b(a las|alrededor de|como a las|horas|de la tarde|de la mañana|son las|)\b", "", raw, flags=re.IGNORECASE)
         tokens = raw.split()
         converted = []
         for token in tokens:
@@ -148,7 +148,11 @@ async def infer_plate_from_text(raw: str) -> str:
     Salida:
     """.format(raw=raw)
 
-    response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
+    response = ASI1RequestWrapper(
+        api_key=os.getenv('ASI1_API_KEY'), 
+        temperature=0.3
+    ).generate(prompt)
+    
     if response is None:
         return ""
 
@@ -181,7 +185,11 @@ async def infer_eta_from_text(raw: str) -> str:
     Salida:
     """.format(raw=raw)
 
-    response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
+    response = ASI1RequestWrapper(
+        api_key=os.getenv('ASI1_API_KEY'), 
+        temperature=0.3
+    ).generate(prompt)
+
     if response is None:
         return "No quedo claro"
     eta = response.strip()

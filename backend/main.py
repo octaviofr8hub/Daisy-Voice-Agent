@@ -2,7 +2,7 @@ from __future__ import annotations
 import asyncio
 from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
 from livekit.agents.multimodal import MultimodalAgent
-from livekit.plugins import openai
+from livekit.plugins import openai, silero
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
 from daisy_fsm import ConversationStateMachine
@@ -34,10 +34,10 @@ async def entrypoint(ctx: JobContext):
 
     # Configura el modelo de OpenAI para la interacción en tiempo real
     openai_realtime_model = openai.realtime.RealtimeModel(
-        model="gpt-4o-mini-realtime-preview",
+        model="gpt-4o-realtime-preview",
         instructions=INSTRUCTIONS,
         voice="shimmer",
-        temperature=0.3,
+        temperature=0.8,
         modalities=["audio", "text"],
     )
     

@@ -2,12 +2,12 @@
 Primera version del agente de voz
 '''
 from __future__ import annotations
-from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
+from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm, vad
 from livekit.agents.multimodal import MultimodalAgent
-from livekit.plugins import openai
+from livekit.plugins import openai, silero
 from dotenv import load_dotenv
 #from api import AssistantFnc
-from daisy_prompts import WELCOME_MESSAGE, INSTRUCTIONS, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
+from backend.prompts import WELCOME_MESSAGE, INSTRUCTIONS, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
 import re
 import time
 import json
@@ -15,7 +15,11 @@ import os
 from datetime import datetime
 
 load_dotenv()
-
+openai.STT()
+openai.LLM()
+openai.TTS()
+vad.VAD()
+llm.ChatContext()
 # Campos a recolectar, inspirados en full_agent.py
 FIELDS = [
     ("nombre_operador", "nombre completo"),
