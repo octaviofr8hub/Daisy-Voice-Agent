@@ -1,6 +1,6 @@
 from livekit.agents import llm
 from config import FIELDS, FIELD_ORDER, NUM_FIELDS, WAKE_WORDS
-from utils import clean_user_text, is_repeat_request, is_off_topic, infer_plate_from_text
+from utils import clean_user_text, is_repeat_request, is_off_topic, infer_plate_from_text, infer_eta_from_text
 from daisy_prompts import WELCOME_MESSAGE, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
 from daisy_assistant_fnc import DaisyAssistantFnc
 import time
@@ -163,7 +163,7 @@ class ConversationStateMachine:
                 elif current_field == "numero_tractor":
                     await self.assistant_fnc.set_tractor_number(cleaned)
                 elif current_field == "placas_tractor":
-                    plate = await infer_plate_from_text(cleaned, self.session)
+                    plate = await infer_plate_from_text(cleaned)
                     if not plate:
                         logger.debug(f"FSM: Placa inválida, repitiendo pregunta para {current_field}")
                         ask_message = ASK_MESSAGE.format(
@@ -200,6 +200,24 @@ class ConversationStateMachine:
                         return
                     await self.assistant_fnc.set_trailer_plates(cleaned)
                     cleaned = plate
+                elif current_field == "eta":
+                    eta = await infer_eta_from_text(cleaned)
+                    if not eta:
+                        logger.debug(f"FSM: ETA inválido, repitiendo pregunta para {current_field}")
+                        ask_message = ASK_MESSAGE.format(
+                            field_name=FIELDS[self.state["idx"]][1],
+                            remaining=NUM_FIELDS - self.state["idx"]
+                        )
+                        self.session.conversation.item.create(
+                            llm.ChatMessage(
+                                role="assistant",
+                                content=ask_message
+                            )
+                        )
+                        self.session.response.create()
+                        return
+                    await self.assistant_fnc.set_eta(eta)
+                    cleaned = eta
             except Exception as e:
                 logger.error(f"Error al invocar función de DaisyAssistantFnc para {current_field}: {str(e)}")
                 # Repite la pregunta si falla

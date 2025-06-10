@@ -7,6 +7,12 @@ from livekit.agents import llm
 from livekit.plugins import openai
 from unidecode import unidecode
 from number_parser import parse_number
+from asi1_agent import ASI1RequestWrapper
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 NUMBER_WORDS = {
     'cero': '0', 'uno': '1', 'dos': '2', 'tres': '3', 'cuatro': '4',
@@ -20,7 +26,11 @@ NUMBER_WORDS = {
 # Diccionario para convertir números en texto a dígitos
 SPANISH_DIGITS = {
     "cero": "0", "uno": "1", "dos": "2", "tres": "3", "cuatro": "4",
-    "cinco": "5", "seis": "6", "siete": "7", "ocho": "8", "nueve": "9"
+    "cinco": "5", "seis": "6", "siete": "7", "ocho": "8", "nueve": "9",
+    "diez": "10", "once": "11", "doce": "12", "trece": "13", "catorce": "14",
+    "quince": "15", "dieciséis": "16", "diecisiete": "17", "dieciocho": "18",
+    "diecinueve": "19", "veinte": "20", "veintiuno": "21", "veintidós": "22",
+    "veintitrés": "23"
 }
 
 # Muletillas comunes en español mexicano
@@ -102,10 +112,26 @@ def clean_user_text(raw: str, current_field: str) -> str:
         raw = re.sub(r"\s*-\s*", "-", raw)
         raw = re.sub(r"\s+", "", raw)
         return raw.upper()
+    
+    elif current_field == "eta":
+        # Preprocesar ETA
+        raw = re.sub(r"\b(a las|alrededor de|como a las|horas|de la tarde|de la mañana)\b", "", raw, flags=re.IGNORECASE)
+        tokens = raw.split()
+        converted = []
+        for token in tokens:
+            if token in SPANISH_DIGITS:
+                converted.append(SPANISH_DIGITS[token])
+            elif token in {"y", "con"}:  # Para "catorce y treinta"
+                converted.append(":")
+            else:
+                converted.append(token)
+        raw = " ".join(converted)
+        raw = re.sub(r"\s*:\s*", ":", raw)
+        return raw
 
     return raw
 
-async def infer_plate_from_text(raw: str, session: openai.realtime.RealtimeSession) -> str:
+async def infer_plate_from_text(raw: str) -> str:
     """
     Detecta la placa vehicular usando el modelo de OpenAI Realtime.
     """
@@ -129,6 +155,7 @@ async def infer_plate_from_text(raw: str, session: openai.realtime.RealtimeSessi
     """.format(raw=raw)
 
     # Enviar prompt al modelo
+    '''
     session.conversation.item.create(
         llm.ChatMessage(
             role="system",
@@ -136,39 +163,55 @@ async def infer_plate_from_text(raw: str, session: openai.realtime.RealtimeSessi
         )
     )
     response = await session.response.create()
-    
+    '''
+
+    response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
+    if response is None:
+        return ""
+
     # Validar formato de la placa
-    plate = response.content.strip().upper()
+    plate = response.strip().upper()
     if re.match(r"^[A-Z]{2,3}-[0-9]{3,4}$", plate):
         return plate
     return ""
 
-'''
-def clean_user_text(raw: str, field: str) -> str:
-    raw = unidecode(raw.strip().lower())
-    raw = words_to_digits(raw)  # Convertir palabras numéricas a dígitos
+async def infer_eta_from_text(raw: str) -> str:
+    """
+    Detecta y devuelve el ETA en formato HH:MM usando el modelo de OpenAI Realtime.
+    """
+    prompt = """
+    Detecta y devuelve únicamente el ETA mencionado por el usuario en formato HH:MM (e.g., 14:30, 09:15).
+    - Ignora muletillas como "esteee", "umm", "creo".
+    - Convierte números en texto (e.g., "catorce treinta" → "14:30").
+    - Normaliza el formato (e.g., "catorce y treinta" → "14:30").
+    - Si no hay un ETA claro o válido, devuelve una cadena vacía.
 
-    if field == "nombre_operador":
-        m = re.search(r"(?:mi nombre es|me llamo|soy|el nombre es)\s+(.+)", raw, re.IGNORECASE)
-        name = m.group(1).strip() if m else raw
-        return " ".join(p.capitalize() for p in name.split())
-    
-    elif field in ("numero_tractor", "numero_trailer"):
-        # Extraer números, permitir guiones o espacios (ej. "123-456" o "123 456")
-        digits = re.findall(r"\d+", raw)
-        if digits:
-            return "".join(digits)  # Unir todos los dígitos
-        return raw
-    
-    elif field in ("placas_tractor", "placas_trailer"):
-        # Formato típico de placas mexicanas: 3 letras + 3-4 dígitos (ABC1234) o 2 letras + 3 dígitos + 2 letras (AB123CD)
-        plate = re.sub(r"[^A-Za-z0-9]", "", raw).upper()
-        # Validar formato de placa
-        if re.match(r"^[A-Z]{2,3}\d{3,4}$|^[A-Z]{2}\d{3}[A-Z]{2}$", plate):
-            return plate
-        # Si no coincide, intentar extraer solo la parte alfanumérica relevante
-        match = re.search(r"[A-Z0-9]{5,7}", plate)
-        return match.group(0) if match else plate
-    
-    return raw
-'''
+    Ejemplos:
+    - Entrada: "Mi ETA es a las 14:30" → Salida: 14:30
+    - Entrada: "Esteee, catorce treinta" → Salida: 14:30
+    - Entrada: "Ummm, la ETA sería como a las dieciséis cero cero" → Salida: 16:00
+    - Entrada: "Llegada a las veinte cero cero" → Salida: 20:00
+    - Entrada: "No sé, mañana por la mañana" → Salida: ""
+    - Entrada: "A las tres quince de la tarde" → Salida: 15:15
+
+    Entrada: "{raw}"
+    Salida:
+    """.format(raw=raw)
+
+    '''
+    session.conversation.item.create(
+        llm.ChatMessage(
+            role="system",
+            content=prompt
+        )
+    )
+    response = await session.response.create()
+    '''
+
+    response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
+    if response is None:
+        return "No quedo claro"
+    eta = response.strip()
+    if re.match(r"^[0-2][0-9]:[0-5][0-9]$", eta) and 0 <= int(eta.split(":")[0]) <= 23:
+        return eta
+    return ""

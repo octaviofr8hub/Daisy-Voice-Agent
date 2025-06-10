@@ -22,6 +22,9 @@ class TrailerDetails(enum.Enum):
     NUMERO_TRAILER = "numero_trailer"
     PLACA_TRAILER = "placa_trailer"
 
+class ETADetails(enum.Enum):
+    ETA = "eta"
+
 
 class DaisyAssistantFnc(llm.FunctionContext):
     def __init__(self):
@@ -37,6 +40,9 @@ class DaisyAssistantFnc(llm.FunctionContext):
         self._trailer_details = {
             TrailerDetails.NUMERO_TRAILER: "",
             TrailerDetails.PLACA_TRAILER: ""
+        }
+        self._eta_details = {
+            ETADetails.ETA: ""
         }
         # Historial de mensajes para el JSON
         self._conversation_log = []
@@ -64,6 +70,7 @@ class DaisyAssistantFnc(llm.FunctionContext):
                 "driver_details": {k.value: v for k, v in self._driver_details.items()},
                 "tractor_details": {k.value: v for k, v in self._tractor_details.items()},
                 "trailer_details": {k.value: v for k, v in self._trailer_details.items()},
+                "eta_details": {k.value: v for k, v in self._eta_details.items()},
                 "conversation_log": self._conversation_log
             }
             with open(filename, "w", encoding="utf-8") as f:
@@ -119,3 +126,12 @@ class DaisyAssistantFnc(llm.FunctionContext):
         self._log_message("system", "Guardando datos en JSON")
         self._save_to_json()
         return "Datos guardados en JSON"
+
+    @llm.ai_callable(description="Registra el ETA en formato HH:MM")
+    def set_eta(self, eta: Annotated[str, llm.TypeInfo(description="ETA en formato HH:MM")]):
+        """Registra el ETA y lo guarda en el estado."""
+        logger.info(f"Registrando ETA: {eta}")
+        self._eta_details[ETADetails.ETA] = eta.strip()
+        self._log_message("system", f"ETA registrado: {eta}")
+        return f"ETA registrado: {eta}"
+        
