@@ -6,8 +6,7 @@ from livekit.plugins import openai
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
 from daisy_fsm import ConversationStateMachine
-#from logger import ConversationLogger
-from daisy_prompts import INSTRUCTIONS
+from prompts import INSTRUCTIONS
 import logging
 
 
@@ -35,10 +34,10 @@ async def entrypoint(ctx: JobContext):
 
     # Configura el modelo de OpenAI para la interacción en tiempo real
     openai_realtime_model = openai.realtime.RealtimeModel(
-        model="gpt-4o-realtime-preview",
+        model="gpt-4o-mini-realtime-preview",
         instructions=INSTRUCTIONS,
         voice="shimmer",
-        temperature=0.8,
+        temperature=0.3,
         modalities=["audio", "text"],
     )
     

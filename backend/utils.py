@@ -1,10 +1,5 @@
 import re
-import os
-import json
-from datetime import datetime
 import config
-from livekit.agents import llm
-from livekit.plugins import openai
 from unidecode import unidecode
 from number_parser import parse_number
 from asi1_agent import ASI1RequestWrapper
@@ -12,7 +7,6 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
 
 NUMBER_WORDS = {
     'cero': '0', 'uno': '1', 'dos': '2', 'tres': '3', 'cuatro': '4',
@@ -154,17 +148,6 @@ async def infer_plate_from_text(raw: str) -> str:
     Salida:
     """.format(raw=raw)
 
-    # Enviar prompt al modelo
-    '''
-    session.conversation.item.create(
-        llm.ChatMessage(
-            role="system",
-            content=prompt
-        )
-    )
-    response = await session.response.create()
-    '''
-
     response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
     if response is None:
         return ""
@@ -197,16 +180,6 @@ async def infer_eta_from_text(raw: str) -> str:
     Entrada: "{raw}"
     Salida:
     """.format(raw=raw)
-
-    '''
-    session.conversation.item.create(
-        llm.ChatMessage(
-            role="system",
-            content=prompt
-        )
-    )
-    response = await session.response.create()
-    '''
 
     response = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3).generate(prompt)
     if response is None:

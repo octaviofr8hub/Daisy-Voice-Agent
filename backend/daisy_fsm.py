@@ -1,11 +1,10 @@
 from livekit.agents import llm
 from config import FIELDS, FIELD_ORDER, NUM_FIELDS, WAKE_WORDS
 from utils import clean_user_text, is_repeat_request, is_off_topic, infer_plate_from_text, infer_eta_from_text
-from daisy_prompts import WELCOME_MESSAGE, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
+from prompts import WELCOME_MESSAGE, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
 from daisy_assistant_fnc import DaisyAssistantFnc
 import time
 import logging
-from unidecode import unidecode
 
 # Configura el logger para state_machine
 logging.basicConfig(
@@ -49,7 +48,6 @@ class ConversationStateMachine:
         Procesa la entrada del usuario
         """
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        start_time = time.time()
         # Convierte el contenido del mensaje si es una lista
         try:
             if isinstance(msg.content, list):
@@ -74,9 +72,6 @@ class ConversationStateMachine:
             await self.handle_asking(msg.content)
         elif self.state["state"] == "confirm":
             await self.handle_confirm(user_text_lower)
-        end_time = time.time()
-        latency_ms = (end_time - start_time) * 1000
-        logger.debug(f"Latencia del LLM ({self.state['state']}): {latency_ms:.2f} ms")
 
     async def handle_repeat(self):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
@@ -183,7 +178,7 @@ class ConversationStateMachine:
                 elif current_field == "numero_trailer":
                     await self.assistant_fnc.set_trailer_number(cleaned)
                 elif current_field == "placas_trailer":
-                    plate = await infer_plate_from_text(cleaned, self.session)
+                    plate = await infer_plate_from_text(cleaned)
                     if not plate:
                         logger.debug(f"FSM: Placa inválida, repitiendo pregunta para {current_field}")
                         ask_message = ASK_MESSAGE.format(

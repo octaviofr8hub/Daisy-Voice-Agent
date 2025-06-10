@@ -43,9 +43,3 @@ class ASI1RequestWrapper:
         except Exception as e:
             print(f"Error en la solicitud a ASI1: {e}")
             return None
-        '''
-        class Dummy:
-            def __init__(self, content):
-                self.message = type("msg", (), {"content": content})
-        return type("Resp", (), {"generations": [[Dummy(output)]]})()
-        '''
