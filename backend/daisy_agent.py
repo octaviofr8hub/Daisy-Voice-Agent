@@ -1,9 +1,6 @@
 '''
 Primera version del agente de voz
 '''
-
-
-
 from __future__ import annotations
 from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
 from livekit.agents.multimodal import MultimodalAgent
@@ -76,7 +73,7 @@ async def entrypoint(ctx: JobContext):
     await ctx.wait_for_participant()
     
     model = openai.realtime.RealtimeModel(  
-        model="gpt-4o-realtime-preview",
+        model="gpt-4o-mini-realtime-preview",
         instructions=INSTRUCTIONS,
         voice="shimmer",
         temperature=0.8,

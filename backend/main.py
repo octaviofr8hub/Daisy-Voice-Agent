@@ -5,11 +5,9 @@ from livekit.agents.multimodal import MultimodalAgent
 from livekit.plugins import openai
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
-
 from daisy_fsm import ConversationStateMachine
 #from logger import ConversationLogger
 from daisy_prompts import INSTRUCTIONS
-
 import logging
 
 
