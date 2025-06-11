@@ -1,0 +1,54 @@
+{
+  "session_id": "6c3bf305",
+  "driver_details": {
+    "nombre_operador": "Reina Méndez Sandoval"
+  },
+  "tractor_details": {
+    "numero_tractor": "3333",
+    "placa_tractor": "LMN-3333"
+  },
+  "trailer_details": {
+    "numero_trailer": "1050",
+    "placa_trailer": "OPQ-5050"
+  },
+  "eta_details": {
+    "eta": "13:05"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-11T11:31:26.456485",
+      "role": "system",
+      "content": "Nombre del operador registrado: Reina Méndez Sandoval"
+    },
+    {
+      "timestamp": "2025-06-11T11:31:42.095427",
+      "role": "system",
+      "content": "Número de tractor registrado: 3333"
+    },
+    {
+      "timestamp": "2025-06-11T11:32:01.101010",
+      "role": "system",
+      "content": "Placas de tractor registradas: LMN-3333"
+    },
+    {
+      "timestamp": "2025-06-11T11:32:13.674785",
+      "role": "system",
+      "content": "Número de tráiler registrado: 1050"
+    },
+    {
+      "timestamp": "2025-06-11T11:32:35.621466",
+      "role": "system",
+      "content": "Placas de tráiler registradas: OPQ-5050"
+    },
+    {
+      "timestamp": "2025-06-11T11:32:55.712143",
+      "role": "system",
+      "content": "ETA registrado: 13:05"
+    },
+    {
+      "timestamp": "2025-06-11T11:32:56.652672",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "session_id": "85d5d9ae",
+  "driver_details": {
+    "nombre_operador": "Juan Hernández"
+  },
+  "tractor_details": {
+    "numero_tractor": "4578",
+    "placa_tractor": "HJ-4578"
+  },
+  "trailer_details": {
+    "numero_trailer": "2101",
+    "placa_trailer": "TT-2121"
+  },
+  "eta_details": {
+    "eta": "11:10"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-11T11:40:56.704855",
+      "role": "system",
+      "content": "Nombre del operador registrado: Juan Hernández"
+    },
+    {
+      "timestamp": "2025-06-11T11:41:13.480646",
+      "role": "system",
+      "content": "ETA registrado: 11:10"
+    },
+    {
+      "timestamp": "2025-06-11T11:41:27.233066",
+      "role": "system",
+      "content": "Número de tractor registrado: 4578"
+    },
+    {
+      "timestamp": "2025-06-11T11:41:45.591674",
+      "role": "system",
+      "content": "Placas de tractor registradas: HAJ-1045"
+    },
+    {
+      "timestamp": "2025-06-11T11:42:09.469879",
+      "role": "system",
+      "content": "Placas de tractor registradas: HJ-4578"
+    },
+    {
+      "timestamp": "2025-06-11T11:42:25.136945",
+      "role": "system",
+      "content": "Número de tráiler registrado: 2101"
+    },
+    {
+      "timestamp": "2025-06-11T11:42:38.604805",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TT-2121"
+    },
+    {
+      "timestamp": "2025-06-11T11:42:41.589459",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}
