@@ -4,7 +4,8 @@ FIELDS = [
     ("numero_tractor", "número de tractor"),
     ("placas_tractor", "placas de tractor"),
     ("numero_trailer", "número de tráiler"),
-    ("placas_trailer", "placas de tráiler")
+    ("placas_trailer", "placas de tráiler"),
+    ("eta", "ETA"),
 ]
 
 # Lista con los nombres de los campos en orden

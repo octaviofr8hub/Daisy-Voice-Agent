@@ -1,0 +1,54 @@
+{
+  "session_id": "c890038c",
+  "driver_details": {
+    "nombre_operador": "Lorena Méndez"
+  },
+  "tractor_details": {
+    "numero_tractor": "33333",
+    "placa_tractor": "MM-33333"
+  },
+  "trailer_details": {
+    "numero_trailer": "50",
+    "placa_trailer": "TR-5050"
+  },
+  "eta_details": {
+    "eta": "13:05"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-12T11:47:34.170129",
+      "role": "system",
+      "content": "Nombre del operador registrado: Lorena Méndez"
+    },
+    {
+      "timestamp": "2025-06-12T11:47:48.920628",
+      "role": "system",
+      "content": "Número de tractor registrado: 33333"
+    },
+    {
+      "timestamp": "2025-06-12T11:48:08.163976",
+      "role": "system",
+      "content": "Placas de tractor registradas: MM-33333"
+    },
+    {
+      "timestamp": "2025-06-12T11:48:25.192098",
+      "role": "system",
+      "content": "Número de tráiler registrado: 50"
+    },
+    {
+      "timestamp": "2025-06-12T11:48:45.303193",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TR-5050"
+    },
+    {
+      "timestamp": "2025-06-12T11:49:05.256318",
+      "role": "system",
+      "content": "ETA registrado: 13:05"
+    },
+    {
+      "timestamp": "2025-06-12T11:49:06.504471",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

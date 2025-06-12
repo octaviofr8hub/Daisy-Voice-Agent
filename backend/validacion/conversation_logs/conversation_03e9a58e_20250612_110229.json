@@ -1,0 +1,54 @@
+{
+  "session_id": "03e9a58e",
+  "driver_details": {
+    "nombre_operador": "Luis Martínez"
+  },
+  "tractor_details": {
+    "numero_tractor": "1555",
+    "placa_tractor": "JKL-4321"
+  },
+  "trailer_details": {
+    "numero_trailer": "88",
+    "placa_trailer": "DEF-8888"
+  },
+  "eta_details": {
+    "eta": "09:15"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-12T10:59:47.486867",
+      "role": "system",
+      "content": "Nombre del operador registrado: Luis Martínez"
+    },
+    {
+      "timestamp": "2025-06-12T11:00:00.575719",
+      "role": "system",
+      "content": "Número de tractor registrado: 1555"
+    },
+    {
+      "timestamp": "2025-06-12T11:00:19.200024",
+      "role": "system",
+      "content": "Placas de tractor registradas: JKL-4321"
+    },
+    {
+      "timestamp": "2025-06-12T11:00:51.068228",
+      "role": "system",
+      "content": "Número de tráiler registrado: 88"
+    },
+    {
+      "timestamp": "2025-06-12T11:01:15.296231",
+      "role": "system",
+      "content": "Placas de tráiler registradas: DEF-8888"
+    },
+    {
+      "timestamp": "2025-06-12T11:01:54.494305",
+      "role": "system",
+      "content": "ETA registrado: 09:15"
+    },
+    {
+      "timestamp": "2025-06-12T11:02:29.030472",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

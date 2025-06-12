@@ -1,0 +1,54 @@
+{
+  "session_id": "4b737ab7",
+  "driver_details": {
+    "nombre_operador": "Juan Antonio Pérez"
+  },
+  "tractor_details": {
+    "numero_tractor": "2384",
+    "placa_tractor": "ABC-1234"
+  },
+  "trailer_details": {
+    "numero_trailer": "4042",
+    "placa_trailer": "DEF-4567"
+  },
+  "eta_details": {
+    "eta": "14:30"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-12T10:33:14.412308",
+      "role": "system",
+      "content": "Nombre del operador registrado: Juan Antonio Pérez"
+    },
+    {
+      "timestamp": "2025-06-12T10:33:32.637027",
+      "role": "system",
+      "content": "Número de tractor registrado: 2384"
+    },
+    {
+      "timestamp": "2025-06-12T10:33:54.057294",
+      "role": "system",
+      "content": "Placas de tractor registradas: ABC-1234"
+    },
+    {
+      "timestamp": "2025-06-12T10:34:11.418489",
+      "role": "system",
+      "content": "Número de tráiler registrado: 4042"
+    },
+    {
+      "timestamp": "2025-06-12T10:34:36.999118",
+      "role": "system",
+      "content": "Placas de tráiler registradas: DEF-4567"
+    },
+    {
+      "timestamp": "2025-06-12T10:35:01.101347",
+      "role": "system",
+      "content": "ETA registrado: 14:30"
+    },
+    {
+      "timestamp": "2025-06-12T10:35:03.218271",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

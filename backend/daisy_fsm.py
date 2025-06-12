@@ -168,6 +168,8 @@ class ConversationStateMachine:
                     await self.assistant_fnc.set_trailer_number(cleaned)
                 elif current_field == "placas_trailer":
                     await self.assistant_fnc.set_trailer_plates(cleaned)
+                elif current_field == "eta":
+                    await self.assistant_fnc.set_eta(cleaned)
             except Exception as e:
                 logger.error(f"Error al invocar función de DaisyAssistantFnc para {current_field}: {str(e)}")
                 # Repite la pregunta si falla

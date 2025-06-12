@@ -1,0 +1,54 @@
+{
+  "session_id": "69a33b35",
+  "driver_details": {
+    "nombre_operador": "Pedro Ruiz García"
+  },
+  "tractor_details": {
+    "numero_tractor": "2020",
+    "placa_tractor": "TR-2020"
+  },
+  "trailer_details": {
+    "numero_trailer": "33",
+    "placa_trailer": "TR-3333"
+  },
+  "eta_details": {
+    "eta": "07:50"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-12T12:15:44.823126",
+      "role": "system",
+      "content": "Nombre del operador registrado: Pedro Ruiz García"
+    },
+    {
+      "timestamp": "2025-06-12T12:15:57.563767",
+      "role": "system",
+      "content": "Número de tractor registrado: 2020"
+    },
+    {
+      "timestamp": "2025-06-12T12:16:11.851297",
+      "role": "system",
+      "content": "Placas de tractor registradas: TR-2020"
+    },
+    {
+      "timestamp": "2025-06-12T12:16:29.558368",
+      "role": "system",
+      "content": "Número de tráiler registrado: 33"
+    },
+    {
+      "timestamp": "2025-06-12T12:16:50.011913",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TR-3333"
+    },
+    {
+      "timestamp": "2025-06-12T12:17:09.520497",
+      "role": "system",
+      "content": "ETA registrado: 07:50"
+    },
+    {
+      "timestamp": "2025-06-12T12:17:11.342504",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

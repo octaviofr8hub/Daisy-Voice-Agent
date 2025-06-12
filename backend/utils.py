@@ -6,6 +6,15 @@ import config
 
 from unidecode import unidecode
 
+SPANISH_DIGITS = {
+    "cero": "0", "uno": "1", "dos": "2", "tres": "3", "cuatro": "4",
+    "cinco": "5", "seis": "6", "siete": "7", "ocho": "8", "nueve": "9",
+    "diez": "10", "once": "11", "doce": "12", "trece": "13", "catorce": "14",
+    "quince": "15", "dieciséis": "16", "diecisiete": "17", "dieciocho": "18",
+    "diecinueve": "19", "veinte": "20", "veintiuno": "21", "veintidós": "22",
+    "veintitrés": "23"
+}
+
 NUMBER_WORDS = {
     'cero': '0', 'uno': '1', 'dos': '2', 'tres': '3', 'cuatro': '4',
     'cinco': '5', 'seis': '6', 'siete': '7', 'ocho': '8', 'nueve': '9',
@@ -56,5 +65,21 @@ def clean_user_text(raw: str, field: str) -> str:
         # Si no coincide, intentar extraer solo la parte alfanumérica relevante
         match = re.search(r"[A-Z0-9]{5,7}", plate)
         return match.group(0) if match else plate
+    
+    elif field == "eta":
+        # Preprocesar ETA
+        raw = re.sub(r"\b(a las|alrededor de|como a las|horas|de la tarde|de la mañana|son las|)\b", "", raw, flags=re.IGNORECASE)
+        tokens = raw.split()
+        converted = []
+        for token in tokens:
+            if token in SPANISH_DIGITS:
+                converted.append(SPANISH_DIGITS[token])
+            elif token in {"y", "con"}:  # Para "catorce y treinta"
+                converted.append(":")
+            else:
+                converted.append(token)
+        raw = " ".join(converted)
+        raw = re.sub(r"\s*:\s*", ":", raw)
+        return raw
     
     return raw

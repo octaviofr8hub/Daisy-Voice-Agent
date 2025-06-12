@@ -1,0 +1,122 @@
+[
+  {
+    "segment": 1,
+    "route": "route_1",
+    "fields": {
+      "nombre_operador": "Juan Pérez",
+      "numero_tractor": "1234",
+      "placa_tractor": "ABC-1234",
+      "numero_trailer": "42",
+      "placa_trailer": "DEF-4567",
+      "eta": "14:30"
+    }
+  },
+  {
+    "segment": 2,
+    "route": "route_2",
+    "fields": {
+      "nombre_operador": "Ana Gómez",
+      "numero_tractor": "9876",
+      "placa_tractor": "XYZ-9876",
+      "numero_trailer": "77",
+      "placa_trailer": "GHI-3210",
+      "eta": "16:00"
+    }
+  },
+  {
+    "segment": 3,
+    "route": "route_3",
+    "fields": {
+      "nombre_operador": "Luis Martínez",
+      "numero_tractor": "5555",
+      "placa_tractor": "JKL-4321",
+      "numero_trailer": "88",
+      "placa_trailer": "DEF-8888",
+      "eta": "09:15"
+    }
+  },
+  {
+    "segment": 4,
+    "route": "route_4",
+    "fields": {
+      "nombre_operador": "Carlos Díaz",
+      "numero_tractor": "2468",
+      "placa_tractor": "ABC-2468",
+      "numero_trailer": "99",
+      "placa_trailer": "XYZ-9999",
+      "eta": "12:45"
+    }
+  },
+  {
+    "segment": 5,
+    "route": "route_5",
+    "fields": {
+      "nombre_operador": "Marta López",
+      "numero_tractor": "1111",
+      "placa_tractor": "PL-1111",
+      "numero_trailer": "56",
+      "placa_trailer": "TL-5656",
+      "eta": "18:20"
+    }
+  },
+  {
+    "segment": 6,
+    "route": "route_6",
+    "fields": {
+      "nombre_operador": "Pedro Ruiz",
+      "numero_tractor": "2020",
+      "placa_tractor": "PR-2020",
+      "numero_trailer": "33",
+      "placa_trailer": "TR-3333",
+      "eta": "07:50"
+    }
+  },
+  {
+    "segment": 7,
+    "route": "route_7",
+    "fields": {
+      "nombre_operador": "Juan Hernández",
+      "numero_tractor": "4578",
+      "placa_tractor": "HJ-4578",
+      "numero_trailer": "21",
+      "placa_trailer": "TT-2121",
+      "eta": "11:10"
+    }
+  },
+  {
+    "segment": 8,
+    "route": "route_8",
+    "fields": {
+      "nombre_operador": "Lorena Méndez",
+      "numero_tractor": "3333",
+      "placa_tractor": "LM-3333",
+      "numero_trailer": "50",
+      "placa_trailer": "TR-5050",
+      "eta": "13:05"
+    }
+  },
+  {
+    "segment": 9,
+    "route": "route_9",
+    "fields": {
+      "nombre_operador": "Ricardo Vega",
+      "numero_tractor": "7788",
+      "placa_tractor": "RV-7788",
+      "numero_trailer": "99",
+      "placa_trailer": "VG-9999",
+      "eta": "20:00"
+    }
+  },
+  {
+    "segment": 10,
+    "route": "route_10",
+    "fields": {
+      "nombre_operador": "Paula Castro",
+      "numero_tractor": "4242",
+      "placa_tractor": "PC-4242",
+      "numero_trailer": "10",
+      "placa_trailer": "TR-1010",
+      "eta": "17:35"
+    }
+  }
+]
