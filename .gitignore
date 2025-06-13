@@ -6,4 +6,5 @@ backend/*.sqlite
 venv/
 backend/*.json
 backend/*.env
+backend/A3/*.exe
 

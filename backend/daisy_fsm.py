@@ -3,8 +3,10 @@ from config import FIELDS, FIELD_ORDER, NUM_FIELDS, WAKE_WORDS
 from utils import clean_user_text, is_repeat_request, is_off_topic, infer_plate_from_text, infer_eta_from_text
 from prompts import WELCOME_MESSAGE, ASK_MESSAGE, CONFIRM_MESSAGE, REPEAT_MESSAGE, OFF_TOPIC_MESSAGE, PERMISSION_MESSAGE
 from daisy_assistant_fnc import DaisyAssistantFnc
+from asi1_agent import ASI1RequestWrapper
 import time
 import logging
+import os
 
 # Configura el logger para state_machine
 logging.basicConfig(
@@ -16,10 +18,12 @@ logger = logging.getLogger(__name__)
 
 # Clase que maneja la máquina de estados de la conversación
 class ConversationStateMachine:
-    def __init__(self, session, assistant_fnc: DaisyAssistantFnc):
+    def __init__(self, session, assistant_fnc: DaisyAssistantFnc, asi1_ll: ASI1RequestWrapper):
         # Almacena la sesión de LiveKit
         self.session = session
         self.assistant_fnc = assistant_fnc
+        self.asi1_llm = asi1_ll
+        #self.asi1_llm = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3)
         # Estado inicial de la conversación
         self.state = {
             "state": "waiting_wake",
@@ -30,15 +34,29 @@ class ConversationStateMachine:
         }
         logger.debug(f"Inicializando máquina de estados para sesión ")
 
+    async def generate_asi1_response(self, prompt: str) -> str:
+        """Genera una respuesta usando ASI1RequestWrapper."""
+        try:
+            #messages = [llm.ChatMessage(role="user", content=prompt)]
+            response = self.asi1_llm.generate(prompt)
+            if response is None:
+                logger.error("Error: No se recibió respuesta de ASI1")
+                return "Lo siento, hubo un problema. ¿Puedes repetir, por favor?"
+            return response
+        except Exception as e:
+            logger.error(f"Error al generar respuesta con ASI1: {str(e)}")
+            return "Lo siento, hubo un problema. ¿Puedes repetir, por favor?"
+
     async def send_welcome(self):
         """
         Envía el mensaje de bienvenida y lo registra
         """
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
+        welcome_message = await self.generate_asi1_response(WELCOME_MESSAGE)
         self.session.conversation.item.create(
             llm.ChatMessage(
                 role="assistant",
-                content=WELCOME_MESSAGE
+                content=welcome_message
             )
         )
         self.session.response.create()
@@ -75,7 +93,8 @@ class ConversationStateMachine:
 
     async def handle_repeat(self):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        repeat_message = REPEAT_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
+        repeat_prompt = REPEAT_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
+        repeat_message = await self.generate_asi1_response(repeat_prompt)
         self.session.conversation.item.create(
             llm.ChatMessage(
                 role="system",
@@ -86,7 +105,8 @@ class ConversationStateMachine:
 
     async def handle_off_topic(self):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
-        off_topic_message = OFF_TOPIC_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
+        off_topic_prompt = OFF_TOPIC_MESSAGE.format(field_name=FIELDS[self.state["idx"]][1])
+        off_topic_message = await self.generate_asi1_response(off_topic_prompt)
         self.session.conversation.item.create(
             llm.ChatMessage(
                 role="system",
@@ -101,6 +121,9 @@ class ConversationStateMachine:
             logger.debug(f"FSM: Transición a waiting_permission")
             self.state["state"] = "waiting_permission"
             permission_request = "¡Hola, qué tal! Soy Daisy, necesito unos datos para tu registro. ¿Puedo hacerte unas preguntas?"
+            #permission_request = await self.generate_asi1_response(
+            #    "¡Hola, qué tal! Soy Daisy, necesito unos datos para tu registro. ¿Puedo hacerte unas preguntas?"
+            #)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -111,6 +134,7 @@ class ConversationStateMachine:
 
     async def handle_waiting_permission(self, user_text: str):
         logger.debug(f"FSM: Estado actual -> {self.state['state']}")
+        '''
         permission_prompt = PERMISSION_MESSAGE.format(text=user_text)
         self.session.conversation.item.create(
             llm.ChatMessage(
@@ -118,14 +142,18 @@ class ConversationStateMachine:
                 content=permission_prompt
             )
         )
+        '''
+        permission_prompt = PERMISSION_MESSAGE.format(text=user_text)
+        intent = await self.generate_asi1_response(permission_prompt)
         intent = "aceptar_llamada"  # Placeholder, debe venir del modelo
         if intent == "aceptar_llamada":
             logger.debug(f"FSM: Transición a asking")
             self.state["state"] = "asking"
-            ask_message = ASK_MESSAGE.format(
+            ask_prompt = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 remaining=NUM_FIELDS - self.state["idx"]
             )
+            ask_message = await self.generate_asi1_response(ask_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -158,7 +186,13 @@ class ConversationStateMachine:
                 elif current_field == "numero_tractor":
                     await self.assistant_fnc.set_tractor_number(cleaned)
                 elif current_field == "placas_tractor":
-                    plate = await infer_plate_from_text(cleaned)
+                    plate = await self.asi1_llm.generate(
+                        f"""
+                        Obten la placa del tractor enunciada aqui
+                        y retornala unicamente, la placa tiene el formato ABC-1111 o XY-2222: {plate} 
+                        """
+                    )
+                    #plate = await infer_plate_from_text(cleaned)
                     if not plate:
                         logger.debug(f"FSM: Placa inválida, repitiendo pregunta para {current_field}")
                         ask_message = ASK_MESSAGE.format(
@@ -178,9 +212,16 @@ class ConversationStateMachine:
                 elif current_field == "numero_trailer":
                     await self.assistant_fnc.set_trailer_number(cleaned)
                 elif current_field == "placas_trailer":
-                    plate = await infer_plate_from_text(cleaned)
+                    #plate = await infer_plate_from_text(cleaned)
+                    plate = await self.asi1_llm.generate(
+                        f"""
+                        Obten la placa del trailer enunciada aqui
+                        y retornala unicamente, la placa tiene el formato ABC-1111 o XY-2222: {plate} 
+                        """
+                    )
                     if not plate:
                         logger.debug(f"FSM: Placa inválida, repitiendo pregunta para {current_field}")
+                        
                         ask_message = ASK_MESSAGE.format(
                             field_name=FIELDS[self.state["idx"]][1],
                             remaining=NUM_FIELDS - self.state["idx"]
@@ -196,8 +237,20 @@ class ConversationStateMachine:
                     await self.assistant_fnc.set_trailer_plates(cleaned)
                     cleaned = plate
                 elif current_field == "eta":
-                    eta = await infer_eta_from_text(cleaned)
+                    #eta = await infer_eta_from_text(cleaned)
+                    eta = await self.asi1_llm.generate(
+                        f"""
+                        Obten la placa del tractor enunciada aqui
+                        y retornala unicamente, la placa tiene el formato ABC-1111 o XY-2222: {plate} 
+                        """
+                    )
                     if not eta:
+                        plate = await self.asi1_llm.generate(
+                            f"""
+                            Obten la hora estimada de llegada aqui
+                            y retornala unicamente, en el formato hh:mm: {eta} 
+                            """
+                        )
                         logger.debug(f"FSM: ETA inválido, repitiendo pregunta para {current_field}")
                         ask_message = ASK_MESSAGE.format(
                             field_name=FIELDS[self.state["idx"]][1],
@@ -216,10 +269,18 @@ class ConversationStateMachine:
             except Exception as e:
                 logger.error(f"Error al invocar función de DaisyAssistantFnc para {current_field}: {str(e)}")
                 # Repite la pregunta si falla
+                '''
                 ask_message = ASK_MESSAGE.format(
                     field_name=FIELDS[self.state["idx"]][1],
                     remaining=NUM_FIELDS - self.state["idx"]
                 )
+                '''
+                # Repite la pregunta si falla
+                ask_prompt = ASK_MESSAGE.format(
+                    field_name=FIELDS[self.state["idx"]][1],
+                    remaining=NUM_FIELDS - self.state["idx"]
+                )
+                ask_message = await self.generate_asi1_response(ask_prompt)
                 self.session.conversation.item.create(
                     llm.ChatMessage(
                         role="assistant",
@@ -229,10 +290,17 @@ class ConversationStateMachine:
                 self.session.response.create()
                 return
             # Confirmación con formato más claro para placas
+            '''
             confirm_message = CONFIRM_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 value=" ".join(cleaned) if current_field in ("placas_tractor", "placas_trailer") else cleaned
             )
+            '''
+            confirm_prompt = CONFIRM_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                value=" ".join(cleaned) if current_field in ("placas_tractor", "placas_trailer") else cleaned
+            )
+            confirm_message = await self.generate_asi1_response(confirm_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -245,10 +313,17 @@ class ConversationStateMachine:
             self.session.response.create()
         else:
             logger.debug(f"FSM: Respuesta inválida, repitiendo pregunta para {current_field}")
+            '''
             ask_message = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 remaining=NUM_FIELDS - self.state["idx"]
             )
+            '''
+            ask_prompt = ASK_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                remaining=NUM_FIELDS - self.state["idx"]
+            )
+            ask_message = await self.generate_asi1_response(ask_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -281,10 +356,17 @@ class ConversationStateMachine:
                 return
             logger.debug(f"FSM: Transición a asking para campo {FIELD_ORDER[self.state['idx']]}")
             self.state["state"] = "asking"
+            '''
             ask_message = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 remaining=NUM_FIELDS - self.state["idx"]
             )
+            '''
+            ask_prompt = ASK_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                remaining=NUM_FIELDS - self.state["idx"]
+            )
+            ask_message = await self.generate_asi1_response(ask_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -296,10 +378,17 @@ class ConversationStateMachine:
             logger.debug(f"FSM: Dato rechazado o demasiados intentos, repitiendo pregunta para {current_field}")
             self.state["fields"][current_field] = None
             self.state["state"] = "asking"
+            '''
             ask_message = ASK_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 remaining=NUM_FIELDS - self.state["idx"]
             )
+            '''
+            ask_prompt = ASK_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                remaining=NUM_FIELDS - self.state["idx"]
+            )
+            ask_message = await self.generate_asi1_response(ask_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",
@@ -309,10 +398,17 @@ class ConversationStateMachine:
             self.session.response.create()
         else:
             logger.debug(f"FSM: Respuesta ambigua, pidiendo confirmación de nuevo para {current_field}")
+            '''
             confirm_message = CONFIRM_MESSAGE.format(
                 field_name=FIELDS[self.state["idx"]][1],
                 value=" ".join(self.state["fields"][current_field]) if current_field in ("placas_tractor", "placas_trailer") else self.state["fields"][current_field]
             )
+            '''
+            confirm_prompt = CONFIRM_MESSAGE.format(
+                field_name=FIELDS[self.state["idx"]][1],
+                value=" ".join(self.state["fields"][current_field]) if current_field in ("placas_tractor", "placas_trailer") else self.state["fields"][current_field]
+            )
+            confirm_message = await self.generate_asi1_response(confirm_prompt)
             self.session.conversation.item.create(
                 llm.ChatMessage(
                     role="assistant",

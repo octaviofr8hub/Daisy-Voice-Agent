@@ -5,10 +5,11 @@ from livekit.agents.multimodal import MultimodalAgent
 from livekit.plugins import openai, silero
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
+from asi1_agent import ASI1RequestWrapper
 from daisy_fsm import ConversationStateMachine
 from prompts import INSTRUCTIONS
 import logging
-
+import os
 
 # Configura el logger para main
 logging.basicConfig(
@@ -38,7 +39,8 @@ async def entrypoint(ctx: JobContext):
         instructions=INSTRUCTIONS,
         voice="shimmer",
         temperature=0.8,
-        modalities=["audio", "text"],
+        modalities=["audio", "text"]
+        #modalities=["audio", "text"],
     )
     
 
@@ -46,7 +48,7 @@ async def entrypoint(ctx: JobContext):
     assistant_fnc = DaisyAssistantFnc()
     logger.debug("DaisyAssistantFnc inicializado")
 
-    # Crea el agente multimodal con el modelo y el contexto de funciones
+    # Crea el agente multimoda con el modelo y el contexto de funciones
     assistant = MultimodalAgent(model=openai_realtime_model, fnc_ctx=assistant_fnc)
     logger.debug("MultimodalAgent creado")
 
@@ -63,7 +65,8 @@ async def entrypoint(ctx: JobContext):
     logger.debug("Sesión obtenida")
 
     # Inicializa la máquina de estados con la sesión, logger y contexto de funciones
-    daisy_state_machine = ConversationStateMachine(session, assistant_fnc)
+    asi1_llm = ASI1RequestWrapper(api_key=os.getenv('ASI1_API_KEY'), temperature=0.3)
+    daisy_state_machine = ConversationStateMachine(session, assistant_fnc, asi1_llm)
     logger.debug("ConversationStateMachine inicializada")
 
     # Envía el mensaje de bienvenida

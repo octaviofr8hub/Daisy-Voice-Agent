@@ -8,11 +8,11 @@ class ASI1RequestWrapper:
         self.temperature = temperature
         self.url = "https://api.asi1.ai/v1/chat/completions"
 
-    def generate(self, messages):
-        user_prompt = "\n".join([msg.content for msg in messages[0]])
+    def generate(self, messages: str) -> str:
+        #user_prompt = "\n".join([msg.content for msg in messages[0]])
         payload = {
-            "model": "asi1-fast",
-            "messages": [{"role": "user", "content": user_prompt}],
+            "model": "asi1-standard",
+            "messages": [{"role": "user", "content": messages}],
             "temperature": self.temperature,
             "stream": True,
             "max_tokens": 0
@@ -40,6 +40,7 @@ class ASI1RequestWrapper:
                         except Exception as e:
                             print("Error procesando línea:", decoded_line)
                             continue
+            return output
         except Exception as e:
             print(f"Error en la solicitud a ASI1: {e}")
             return None
