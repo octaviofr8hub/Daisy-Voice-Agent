@@ -7,4 +7,6 @@ venv/
 backend/*.json
 backend/*.env
 backend/A3/*.exe
+backend/A3/__pycache__/
+
 
