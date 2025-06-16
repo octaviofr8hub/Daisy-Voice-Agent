@@ -1,0 +1,54 @@
+{
+  "session_id": "94f3051f",
+  "driver_details": {
+    "nombre_operador": "Ana María Gómez"
+  },
+  "tractor_details": {
+    "numero_tractor": "9876",
+    "placa_tractor": "XY-5376"
+  },
+  "trailer_details": {
+    "numero_trailer": "6537",
+    "placa_trailer": "GH-3210"
+  },
+  "eta_details": {
+    "eta": "16:00"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-16T12:50:41.163771",
+      "role": "system",
+      "content": "Nombre del operador registrado: Ana María Gómez"
+    },
+    {
+      "timestamp": "2025-06-16T12:50:57.938095",
+      "role": "system",
+      "content": "Placas de tractor registradas: XY-5376"
+    },
+    {
+      "timestamp": "2025-06-16T12:51:15.135292",
+      "role": "system",
+      "content": "Número de tractor registrado: 9876"
+    },
+    {
+      "timestamp": "2025-06-16T12:51:35.056413",
+      "role": "system",
+      "content": "Placas de tráiler registradas: GH-3210"
+    },
+    {
+      "timestamp": "2025-06-16T12:51:51.373812",
+      "role": "system",
+      "content": "Número de tráiler registrado: 6537"
+    },
+    {
+      "timestamp": "2025-06-16T12:52:12.295187",
+      "role": "system",
+      "content": "ETA registrado: 16:00"
+    },
+    {
+      "timestamp": "2025-06-16T12:52:13.133981",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}
