@@ -1,0 +1,54 @@
+{
+  "session_id": "1d3f2050",
+  "driver_details": {
+    "nombre_operador": "Miguel Ángel Méndez"
+  },
+  "tractor_details": {
+    "numero_tractor": "333",
+    "placa_tractor": "LM-3333"
+  },
+  "trailer_details": {
+    "numero_trailer": "1050",
+    "placa_trailer": "TR-5050"
+  },
+  "eta_details": {
+    "eta": "13:05"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-16T11:01:16.854378",
+      "role": "system",
+      "content": "Nombre del operador registrado: Miguel Ángel Méndez"
+    },
+    {
+      "timestamp": "2025-06-16T11:01:58.283182",
+      "role": "system",
+      "content": "Número de tractor registrado: 333"
+    },
+    {
+      "timestamp": "2025-06-16T11:02:36.964647",
+      "role": "system",
+      "content": "Placas de tractor registradas: LM-3333"
+    },
+    {
+      "timestamp": "2025-06-16T11:02:51.421396",
+      "role": "system",
+      "content": "Número de tráiler registrado: 1050"
+    },
+    {
+      "timestamp": "2025-06-16T11:03:06.732311",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TR-5050"
+    },
+    {
+      "timestamp": "2025-06-16T11:03:24.159082",
+      "role": "system",
+      "content": "ETA registrado: 13:05"
+    },
+    {
+      "timestamp": "2025-06-16T11:03:25.370098",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

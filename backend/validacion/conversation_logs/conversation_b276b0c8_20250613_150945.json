@@ -1,0 +1,54 @@
+{
+  "session_id": "b276b0c8",
+  "driver_details": {
+    "nombre_operador": "Armando María Gómez"
+  },
+  "tractor_details": {
+    "numero_tractor": "9876",
+    "placa_tractor": "XYZ-9876"
+  },
+  "trailer_details": {
+    "numero_trailer": "77",
+    "placa_trailer": "GHI-3210"
+  },
+  "eta_details": {
+    "eta": "16:00"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-13T15:07:09.626081",
+      "role": "system",
+      "content": "Nombre del operador registrado: Armando María Gómez"
+    },
+    {
+      "timestamp": "2025-06-13T15:07:26.764117",
+      "role": "system",
+      "content": "Número de tractor registrado: 9876"
+    },
+    {
+      "timestamp": "2025-06-13T15:08:09.683300",
+      "role": "system",
+      "content": "Placas de tractor registradas: XYZ-9876"
+    },
+    {
+      "timestamp": "2025-06-13T15:08:49.798617",
+      "role": "system",
+      "content": "ETA registrado: 16:00"
+    },
+    {
+      "timestamp": "2025-06-13T15:09:29.107537",
+      "role": "system",
+      "content": "Número de tráiler registrado: 77"
+    },
+    {
+      "timestamp": "2025-06-13T15:09:30.264758",
+      "role": "system",
+      "content": "Placas de tráiler registradas: GHI-3210"
+    },
+    {
+      "timestamp": "2025-06-13T15:09:45.219327",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

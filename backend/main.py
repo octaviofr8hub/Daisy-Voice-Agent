@@ -6,9 +6,10 @@ from livekit.plugins import openai, silero
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
 from daisy_fsm import ConversationStateMachine
+from llama_agent import LLaMARequestWrapper
 from prompts import INSTRUCTIONS
 import logging
-
+import os
 
 # Configura el logger para main
 logging.basicConfig(
@@ -62,8 +63,11 @@ async def entrypoint(ctx: JobContext):
     session = openai_realtime_model.sessions[0]
     logger.debug("Sesión obtenida")
 
+    llama_llm = LLaMARequestWrapper(api_key=os.getenv('HF_API_KEY'), temperature=0.3)
+    logger.debug("LLaMARequestWrapper inicializado")
+
     # Inicializa la máquina de estados con la sesión, logger y contexto de funciones
-    daisy_state_machine = ConversationStateMachine(session, assistant_fnc)
+    daisy_state_machine = ConversationStateMachine(session, assistant_fnc, llama_llm)
     logger.debug("ConversationStateMachine inicializada")
 
     # Envía el mensaje de bienvenida

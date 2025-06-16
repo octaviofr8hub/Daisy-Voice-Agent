@@ -29,7 +29,10 @@ def find_matching_segment(gt_list, collected_data):
             best_score = score
             best_match = gt
 
-    return best_match['segment'], best_match['route'] if best_match else (None, None)
+    if best_match:
+        return best_match['segment'], best_match['route']
+    return None, None
+    #return best_match['segment'], best_match['route'] if best_match else (None, None)
 
 # Cargar ground truth
 gt_list = load_json('ground_truth.json')

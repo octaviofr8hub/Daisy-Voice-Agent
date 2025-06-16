@@ -1,0 +1,54 @@
+{
+  "session_id": "fbafdc79",
+  "driver_details": {
+    "nombre_operador": "Marco López Ramírez"
+  },
+  "tractor_details": {
+    "numero_tractor": "MXA-0001",
+    "placa_tractor": "PLA-1111"
+  },
+  "trailer_details": {
+    "numero_trailer": "45678",
+    "placa_trailer": "TRE-1553"
+  },
+  "eta_details": {
+    "eta": "19:30"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-16T10:42:24.550105",
+      "role": "system",
+      "content": "Nombre del operador registrado: Marco López Ramírez"
+    },
+    {
+      "timestamp": "2025-06-16T10:42:43.139569",
+      "role": "system",
+      "content": "Número de tractor registrado: MXA-0001"
+    },
+    {
+      "timestamp": "2025-06-16T10:42:59.105511",
+      "role": "system",
+      "content": "Número de tráiler registrado: 45678"
+    },
+    {
+      "timestamp": "2025-06-16T10:43:40.121829",
+      "role": "system",
+      "content": "Placas de tractor registradas: PLA-1111"
+    },
+    {
+      "timestamp": "2025-06-16T10:44:02.819528",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TRE-1553"
+    },
+    {
+      "timestamp": "2025-06-16T10:44:23.135268",
+      "role": "system",
+      "content": "ETA registrado: 19:30"
+    },
+    {
+      "timestamp": "2025-06-16T10:44:24.593802",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

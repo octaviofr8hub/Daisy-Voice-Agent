@@ -1,0 +1,49 @@
+{
+  "session_id": "8d426450",
+  "driver_details": {
+    "nombre_operador": "Paula Castro"
+  },
+  "tractor_details": {
+    "numero_tractor": "9457",
+    "placa_tractor": ""
+  },
+  "trailer_details": {
+    "numero_trailer": "1023",
+    "placa_trailer": "PQR-710"
+  },
+  "eta_details": {
+    "eta": "07:35"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-16T11:40:38.591014",
+      "role": "system",
+      "content": "Nombre del operador registrado: Paula Castro"
+    },
+    {
+      "timestamp": "2025-06-16T11:40:41.123305",
+      "role": "system",
+      "content": "Número de tractor registrado: 9457"
+    },
+    {
+      "timestamp": "2025-06-16T11:41:27.221049",
+      "role": "system",
+      "content": "Placas de tráiler registradas: PQR-710"
+    },
+    {
+      "timestamp": "2025-06-16T11:41:40.071168",
+      "role": "system",
+      "content": "Número de tráiler registrado: 1023"
+    },
+    {
+      "timestamp": "2025-06-16T11:41:56.204534",
+      "role": "system",
+      "content": "ETA registrado: 07:35"
+    },
+    {
+      "timestamp": "2025-06-16T11:41:59.056727",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}
