@@ -1,0 +1,54 @@
+{
+  "session_id": "a67a4e9f",
+  "driver_details": {
+    "nombre_operador": "Luis Martínez"
+  },
+  "tractor_details": {
+    "numero_tractor": "12345",
+    "placa_tractor": "XYZ 789"
+  },
+  "trailer_details": {
+    "numero_trailer": "6788",
+    "placa_trailer": "ZYX 987"
+  },
+  "eta_details": {
+    "eta": "09:15"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T16:08:23.903601",
+      "role": "system",
+      "content": "Nombre del operador registrado: Luis Martínez"
+    },
+    {
+      "timestamp": "2025-06-17T16:08:41.610469",
+      "role": "system",
+      "content": "ETA registrado: 09:15"
+    },
+    {
+      "timestamp": "2025-06-17T16:09:25.170563",
+      "role": "system",
+      "content": "Número de tractor registrado: 12345"
+    },
+    {
+      "timestamp": "2025-06-17T16:09:29.123631",
+      "role": "system",
+      "content": "Placas de tractor registradas: XYZ 789"
+    },
+    {
+      "timestamp": "2025-06-17T16:09:51.005569",
+      "role": "system",
+      "content": "Número de tráiler registrado: 6788"
+    },
+    {
+      "timestamp": "2025-06-17T16:09:55.910821",
+      "role": "system",
+      "content": "Placas de tráiler registradas: ZYX 987"
+    },
+    {
+      "timestamp": "2025-06-17T16:10:13.785819",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

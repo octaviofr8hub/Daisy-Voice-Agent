@@ -1,69 +1,161 @@
 [
   {
-    "filename": "conversation_8810006a_20250613_101856.json",
-    "segment": 9,
-    "route": "route_9",
-    "exact_match_pct": 50.0,
-    "levenshtein_ratio": 0.915,
-    "completeness_pct": 100.0,
+    "filename": "conversation_04529bb0_20250617_162043.json",
+    "segment": 6,
+    "route": "route_6",
+    "exact_match_pct": 66.7,
+    "levenshtein_ratio": 0.762,
+    "completeness_pct": 83.3,
     "field_errors": {
       "nombre_operador": {
-        "ground_truth": "Ricardo Vega",
-        "collected": "Ricardo Vega",
+        "ground_truth": "Pedro Ruiz",
+        "collected": "Pedro Ruiz",
         "lev_ratio": 1.0,
         "exact_match": true
       },
       "numero_tractor": {
-        "ground_truth": "7788",
-        "collected": "77-88",
-        "lev_ratio": 0.889,
+        "ground_truth": "2020",
+        "collected": "920",
+        "lev_ratio": 0.571,
         "exact_match": false
       },
       "placa_tractor": {
-        "ground_truth": "RV-7788",
-        "collected": "RR-77-88",
-        "lev_ratio": 0.8,
-        "exact_match": false
+        "ground_truth": "PR-2020",
+        "collected": "PR-2020",
+        "lev_ratio": 1.0,
+        "exact_match": true
       },
       "numero_trailer": {
-        "ground_truth": "99",
-        "collected": "99",
+        "ground_truth": "33",
+        "collected": "33",
         "lev_ratio": 1.0,
         "exact_match": true
       },
       "placa_trailer": {
-        "ground_truth": "VG-9999",
-        "collected": "BG-99-99",
-        "lev_ratio": 0.8,
+        "ground_truth": "TR-3333",
+        "collected": "TR-3333",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "eta": {
+        "ground_truth": "07:50",
+        "collected": "",
+        "lev_ratio": 0.0,
+        "exact_match": false
+      }
+    }
+  },
+  {
+    "filename": "conversation_27383911_20250617_154020.json",
+    "segment": 5,
+    "route": "route_5",
+    "exact_match_pct": 50.0,
+    "levenshtein_ratio": 0.722,
+    "completeness_pct": 83.3,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Marta López",
+        "collected": "",
+        "lev_ratio": 0.0,
+        "exact_match": false
+      },
+      "numero_tractor": {
+        "ground_truth": "1111",
+        "collected": "1111",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "PL-1111",
+        "collected": "ABC-1111",
+        "lev_ratio": 0.667,
+        "exact_match": false
+      },
+      "numero_trailer": {
+        "ground_truth": "56",
+        "collected": "56",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_trailer": {
+        "ground_truth": "TL-5656",
+        "collected": "DFG-5656",
+        "lev_ratio": 0.667,
         "exact_match": false
       },
       "eta": {
-        "ground_truth": "20:00",
-        "collected": "20:00",
+        "ground_truth": "18:20",
+        "collected": "18:20",
         "lev_ratio": 1.0,
         "exact_match": true
       }
     }
   },
   {
-    "filename": "conversation_8bc321cc_20250613_100946.json",
+    "filename": "conversation_4594d240_20250617_155348.json",
+    "segment": 7,
+    "route": "route_7",
+    "exact_match_pct": 0.0,
+    "levenshtein_ratio": 0.304,
+    "completeness_pct": 83.3,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Juan Hernández",
+        "collected": "Ricardo Vega",
+        "lev_ratio": 0.308,
+        "exact_match": false
+      },
+      "numero_tractor": {
+        "ground_truth": "4578",
+        "collected": "365709",
+        "lev_ratio": 0.4,
+        "exact_match": false
+      },
+      "placa_tractor": {
+        "ground_truth": "HJ-4578",
+        "collected": "ER-5888",
+        "lev_ratio": 0.429,
+        "exact_match": false
+      },
+      "numero_trailer": {
+        "ground_truth": "21",
+        "collected": "901",
+        "lev_ratio": 0.4,
+        "exact_match": false
+      },
+      "placa_trailer": {
+        "ground_truth": "TT-2121",
+        "collected": "II-1999",
+        "lev_ratio": 0.286,
+        "exact_match": false
+      },
+      "eta": {
+        "ground_truth": "11:10",
+        "collected": "",
+        "lev_ratio": 0.0,
+        "exact_match": false
+      }
+    }
+  },
+  {
+    "filename": "conversation_7ac86709_20250617_155627.json",
     "segment": 10,
     "route": "route_10",
-    "exact_match_pct": 33.3,
-    "levenshtein_ratio": 0.629,
+    "exact_match_pct": 16.7,
+    "levenshtein_ratio": 0.661,
     "completeness_pct": 100.0,
     "field_errors": {
       "nombre_operador": {
         "ground_truth": "Paula Castro",
-        "collected": "Pablo Castro",
-        "lev_ratio": 0.833,
+        "collected": "Paola Castro",
+        "lev_ratio": 0.917,
         "exact_match": false
       },
       "numero_tractor": {
         "ground_truth": "4242",
-        "collected": "4242",
-        "lev_ratio": 1.0,
-        "exact_match": true
+        "collected": "3456",
+        "lev_ratio": 0.25,
+        "exact_match": false
       },
       "placa_tractor": {
         "ground_truth": "PC-4242",
@@ -73,14 +165,14 @@
       },
       "numero_trailer": {
         "ground_truth": "10",
-        "collected": "6789",
-        "lev_ratio": 0.0,
+        "collected": "7890",
+        "lev_ratio": 0.333,
         "exact_match": false
       },
       "placa_trailer": {
         "ground_truth": "TR-1010",
-        "collected": "XY-6789",
-        "lev_ratio": 0.143,
+        "collected": "XYZ-1010",
+        "lev_ratio": 0.667,
         "exact_match": false
       },
       "eta": {
@@ -92,63 +184,63 @@
     }
   },
   {
-    "filename": "conversation_95de0031_20250613_095455.json",
-    "segment": 7,
-    "route": "route_7",
-    "exact_match_pct": 50.0,
-    "levenshtein_ratio": 0.887,
+    "filename": "conversation_a67a4e9f_20250617_161013.json",
+    "segment": 1,
+    "route": "route_1",
+    "exact_match_pct": 0.0,
+    "levenshtein_ratio": 0.276,
     "completeness_pct": 100.0,
     "field_errors": {
       "nombre_operador": {
-        "ground_truth": "Juan Hernández",
-        "collected": "Juan Hernández",
-        "lev_ratio": 1.0,
-        "exact_match": true
+        "ground_truth": "Juan Pérez",
+        "collected": "Luis Martínez",
+        "lev_ratio": 0.435,
+        "exact_match": false
       },
       "numero_tractor": {
-        "ground_truth": "4578",
-        "collected": "4578",
-        "lev_ratio": 1.0,
-        "exact_match": true
+        "ground_truth": "1234",
+        "collected": "12345",
+        "lev_ratio": 0.889,
+        "exact_match": false
       },
       "placa_tractor": {
-        "ground_truth": "HJ-4578",
-        "collected": "ATC-4578",
-        "lev_ratio": 0.667,
+        "ground_truth": "ABC-1234",
+        "collected": "XYZ 789",
+        "lev_ratio": 0.0,
         "exact_match": false
       },
       "numero_trailer": {
-        "ground_truth": "21",
-        "collected": "21",
-        "lev_ratio": 1.0,
-        "exact_match": true
+        "ground_truth": "42",
+        "collected": "6788",
+        "lev_ratio": 0.0,
+        "exact_match": false
       },
       "placa_trailer": {
-        "ground_truth": "TT-2121",
-        "collected": "TP-2121",
-        "lev_ratio": 0.857,
+        "ground_truth": "DEF-4567",
+        "collected": "ZYX 987",
+        "lev_ratio": 0.133,
         "exact_match": false
       },
       "eta": {
-        "ground_truth": "11:10",
-        "collected": "11:00",
-        "lev_ratio": 0.8,
+        "ground_truth": "14:30",
+        "collected": "09:15",
+        "lev_ratio": 0.2,
         "exact_match": false
       }
     }
   },
   {
-    "filename": "conversation_ba3655a8_20250613_091501.json",
+    "filename": "conversation_a99a69a0_20250617_160115.json",
     "segment": 1,
     "route": "route_1",
-    "exact_match_pct": 33.3,
-    "levenshtein_ratio": 0.655,
+    "exact_match_pct": 83.3,
+    "levenshtein_ratio": 0.952,
     "completeness_pct": 100.0,
     "field_errors": {
       "nombre_operador": {
         "ground_truth": "Juan Pérez",
-        "collected": "Marta López",
-        "lev_ratio": 0.381,
+        "collected": "Juan Antonio Pérez",
+        "lev_ratio": 0.714,
         "exact_match": false
       },
       "numero_tractor": {
@@ -165,30 +257,76 @@
       },
       "numero_trailer": {
         "ground_truth": "42",
-        "collected": "556",
-        "lev_ratio": 0.0,
-        "exact_match": false
+        "collected": "42",
+        "lev_ratio": 1.0,
+        "exact_match": true
       },
       "placa_trailer": {
         "ground_truth": "DEF-4567",
-        "collected": "DEF-5566",
-        "lev_ratio": 0.75,
-        "exact_match": false
+        "collected": "DEF-4567",
+        "lev_ratio": 1.0,
+        "exact_match": true
       },
       "eta": {
         "ground_truth": "14:30",
-        "collected": "13:30",
+        "collected": "14:30",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      }
+    }
+  },
+  {
+    "filename": "conversation_b8d1ecd1_20250617_162843.json",
+    "segment": 8,
+    "route": "route_8",
+    "exact_match_pct": 66.7,
+    "levenshtein_ratio": 0.943,
+    "completeness_pct": 100.0,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Lorena Méndez",
+        "collected": "Lorena Méndez",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "numero_tractor": {
+        "ground_truth": "3333",
+        "collected": "3333",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "LM-3333",
+        "collected": "LN-3333",
+        "lev_ratio": 0.857,
+        "exact_match": false
+      },
+      "numero_trailer": {
+        "ground_truth": "50",
+        "collected": "50",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_trailer": {
+        "ground_truth": "TR-5050",
+        "collected": "TR-5050",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "eta": {
+        "ground_truth": "13:05",
+        "collected": "15:05",
         "lev_ratio": 0.8,
         "exact_match": false
       }
     }
   },
   {
-    "filename": "conversation_f5dd9c7d_20250613_093111.json",
+    "filename": "conversation_bc96bd24_20250617_153300.json",
     "segment": 5,
     "route": "route_5",
-    "exact_match_pct": 50.0,
-    "levenshtein_ratio": 0.91,
+    "exact_match_pct": 33.3,
+    "levenshtein_ratio": 0.848,
     "completeness_pct": 100.0,
     "field_errors": {
       "nombre_operador": {
@@ -199,31 +337,215 @@
       },
       "numero_tractor": {
         "ground_truth": "1111",
-        "collected": "11-11",
-        "lev_ratio": 0.889,
+        "collected": "113",
+        "lev_ratio": 0.571,
         "exact_match": false
       },
       "placa_tractor": {
         "ground_truth": "PL-1111",
-        "collected": "LM-1111",
+        "collected": "KL-1111",
         "lev_ratio": 0.857,
         "exact_match": false
       },
       "numero_trailer": {
         "ground_truth": "56",
-        "collected": "56",
-        "lev_ratio": 1.0,
-        "exact_match": true
+        "collected": "156",
+        "lev_ratio": 0.8,
+        "exact_match": false
       },
       "placa_trailer": {
         "ground_truth": "TL-5656",
-        "collected": "EF-5656",
-        "lev_ratio": 0.714,
+        "collected": "LM-5656",
+        "lev_ratio": 0.857,
         "exact_match": false
       },
       "eta": {
         "ground_truth": "18:20",
         "collected": "18:20",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      }
+    }
+  },
+  {
+    "filename": "conversation_bcc27a99_20250617_162415.json",
+    "segment": 7,
+    "route": "route_7",
+    "exact_match_pct": 16.7,
+    "levenshtein_ratio": 0.7,
+    "completeness_pct": 83.3,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Juan Hernández",
+        "collected": "",
+        "lev_ratio": 0.0,
+        "exact_match": false
+      },
+      "numero_tractor": {
+        "ground_truth": "4578",
+        "collected": "4578",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "HJ-4578",
+        "collected": "HJK-4578",
+        "lev_ratio": 0.933,
+        "exact_match": false
+      },
+      "numero_trailer": {
+        "ground_truth": "21",
+        "collected": "2109",
+        "lev_ratio": 0.667,
+        "exact_match": false
+      },
+      "placa_trailer": {
+        "ground_truth": "TT-2121",
+        "collected": "PTG-2121",
+        "lev_ratio": 0.8,
+        "exact_match": false
+      },
+      "eta": {
+        "ground_truth": "11:10",
+        "collected": "11:20",
+        "lev_ratio": 0.8,
+        "exact_match": false
+      }
+    }
+  },
+  {
+    "filename": "conversation_de9d4545_20250617_160519.json",
+    "segment": 2,
+    "route": "route_2",
+    "exact_match_pct": 33.3,
+    "levenshtein_ratio": 0.656,
+    "completeness_pct": 100.0,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Ana Gómez",
+        "collected": "Ana María Gómez",
+        "lev_ratio": 0.75,
+        "exact_match": false
+      },
+      "numero_tractor": {
+        "ground_truth": "9876",
+        "collected": "9876",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "XYZ-9876",
+        "collected": "XYZ-9876",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "numero_trailer": {
+        "ground_truth": "77",
+        "collected": "5678",
+        "lev_ratio": 0.333,
+        "exact_match": false
+      },
+      "placa_trailer": {
+        "ground_truth": "GHI-3210",
+        "collected": "ABC-1234",
+        "lev_ratio": 0.25,
+        "exact_match": false
+      },
+      "eta": {
+        "ground_truth": "16:00",
+        "collected": "20:00",
+        "lev_ratio": 0.6,
+        "exact_match": false
+      }
+    }
+  },
+  {
+    "filename": "conversation_e1db2060_20250617_153641.json",
+    "segment": 5,
+    "route": "route_5",
+    "exact_match_pct": 33.3,
+    "levenshtein_ratio": 0.783,
+    "completeness_pct": 100.0,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Marta López",
+        "collected": "Marta López",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "numero_tractor": {
+        "ground_truth": "1111",
+        "collected": "1111",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "PL-1111",
+        "collected": "ABC-1111",
+        "lev_ratio": 0.667,
+        "exact_match": false
+      },
+      "numero_trailer": {
+        "ground_truth": "56",
+        "collected": "856",
+        "lev_ratio": 0.8,
+        "exact_match": false
+      },
+      "placa_trailer": {
+        "ground_truth": "TL-5656",
+        "collected": "DEF-856",
+        "lev_ratio": 0.429,
+        "exact_match": false
+      },
+      "eta": {
+        "ground_truth": "18:20",
+        "collected": "18:30",
+        "lev_ratio": 0.8,
+        "exact_match": false
+      }
+    }
+  },
+  {
+    "filename": "conversation_fa74c5bb_20250617_161502.json",
+    "segment": 4,
+    "route": "route_4",
+    "exact_match_pct": 83.3,
+    "levenshtein_ratio": 0.949,
+    "completeness_pct": 100.0,
+    "field_errors": {
+      "nombre_operador": {
+        "ground_truth": "Carlos Díaz",
+        "collected": "Ricardo Díaz",
+        "lev_ratio": 0.696,
+        "exact_match": false
+      },
+      "numero_tractor": {
+        "ground_truth": "2468",
+        "collected": "2468",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_tractor": {
+        "ground_truth": "ABC-2468",
+        "collected": "ABC-2468",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "numero_trailer": {
+        "ground_truth": "99",
+        "collected": "99",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "placa_trailer": {
+        "ground_truth": "XYZ-9999",
+        "collected": "XYZ-9999",
+        "lev_ratio": 1.0,
+        "exact_match": true
+      },
+      "eta": {
+        "ground_truth": "12:45",
+        "collected": "12:45",
         "lev_ratio": 1.0,
         "exact_match": true
       }

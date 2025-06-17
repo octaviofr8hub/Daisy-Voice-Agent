@@ -11,7 +11,7 @@ class ASI1RequestWrapper:
     def generate(self, messages: str) -> str:
         #user_prompt = "\n".join([msg.content for msg in messages[0]])
         payload = {
-            "model": "asi1-standard",
+            "model": "asi1-mini",
             "messages": [{"role": "user", "content": messages}],
             "temperature": self.temperature,
             "stream": True,

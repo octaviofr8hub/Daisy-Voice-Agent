@@ -1,0 +1,59 @@
+{
+  "session_id": "e1db2060",
+  "driver_details": {
+    "nombre_operador": "Marta López"
+  },
+  "tractor_details": {
+    "numero_tractor": "1111",
+    "placa_tractor": "ABC-1111"
+  },
+  "trailer_details": {
+    "numero_trailer": "856",
+    "placa_trailer": "DEF-856"
+  },
+  "eta_details": {
+    "eta": "18:30"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T15:34:44.458235",
+      "role": "system",
+      "content": "Nombre del operador registrado: Luis Alberto Ramírez"
+    },
+    {
+      "timestamp": "2025-06-17T15:35:10.617244",
+      "role": "system",
+      "content": "Número de tractor registrado: 1111"
+    },
+    {
+      "timestamp": "2025-06-17T15:35:23.762689",
+      "role": "system",
+      "content": "Placas de tractor registradas: ABC-1111"
+    },
+    {
+      "timestamp": "2025-06-17T15:35:36.964191",
+      "role": "system",
+      "content": "Número de tráiler registrado: 856"
+    },
+    {
+      "timestamp": "2025-06-17T15:35:52.419407",
+      "role": "system",
+      "content": "Placas de tráiler registradas: DEF-856"
+    },
+    {
+      "timestamp": "2025-06-17T15:36:11.641540",
+      "role": "system",
+      "content": "ETA registrado: 18:30"
+    },
+    {
+      "timestamp": "2025-06-17T15:36:38.823832",
+      "role": "system",
+      "content": "Nombre del operador registrado: Marta López"
+    },
+    {
+      "timestamp": "2025-06-17T15:36:41.732776",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

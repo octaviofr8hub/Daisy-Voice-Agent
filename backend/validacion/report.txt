@@ -1,42 +1,90 @@
-Advertencia: No se encontró coincidencia para conversation_0787340d_20250613_094007.json
-Advertencia: No se encontró coincidencia para conversation_8c398fdb_20250613_091232.json
-Advertencia: No se encontró coincidencia para conversation_add01627_20250613_094855.json
-Advertencia: No se encontró coincidencia para conversation_d7a68293_20250613_101431.json
-Advertencia: No se encontró coincidencia para conversation_eda5b5e1_20250613_103136.json
-
-Archivo: conversation_8810006a_20250613_101856.json [Seg 9]
-Exact%=50.0 %, Lev=0.915, Compl=100.0 %
+Archivo: conversation_04529bb0_20250617_162043.json [Seg 6]
+Exact%=66.7 %, Lev=0.762, Compl=83.3 %
 Errores por campo:
-  numero_tractor: GT='7788', Collected='77-88', Lev=0.889
-  placa_tractor: GT='RV-7788', Collected='RR-77-88', Lev=0.8
-  placa_trailer: GT='VG-9999', Collected='BG-99-99', Lev=0.8
+  numero_tractor: GT='2020', Collected='920', Lev=0.571
+  eta: GT='07:50', Collected='', Lev=0.0
 
-Archivo: conversation_8bc321cc_20250613_100946.json [Seg 10]
-Exact%=33.3 %, Lev=0.629, Compl=100.0 %
+Archivo: conversation_27383911_20250617_154020.json [Seg 5]
+Exact%=50.0 %, Lev=0.722, Compl=83.3 %
 Errores por campo:
-  nombre_operador: GT='Paula Castro', Collected='Pablo Castro', Lev=0.833
+  nombre_operador: GT='Marta López', Collected='', Lev=0.0
+  placa_tractor: GT='PL-1111', Collected='ABC-1111', Lev=0.667
+  placa_trailer: GT='TL-5656', Collected='DFG-5656', Lev=0.667
+
+Archivo: conversation_4594d240_20250617_155348.json [Seg 7]
+Exact%=0.0 %, Lev=0.304, Compl=83.3 %
+Errores por campo:
+  nombre_operador: GT='Juan Hernández', Collected='Ricardo Vega', Lev=0.308
+  numero_tractor: GT='4578', Collected='365709', Lev=0.4
+  placa_tractor: GT='HJ-4578', Collected='ER-5888', Lev=0.429
+  numero_trailer: GT='21', Collected='901', Lev=0.4
+  placa_trailer: GT='TT-2121', Collected='II-1999', Lev=0.286
+  eta: GT='11:10', Collected='', Lev=0.0
+
+Archivo: conversation_7ac86709_20250617_155627.json [Seg 10]
+Exact%=16.7 %, Lev=0.661, Compl=100.0 %
+Errores por campo:
+  nombre_operador: GT='Paula Castro', Collected='Paola Castro', Lev=0.917
+  numero_tractor: GT='4242', Collected='3456', Lev=0.25
   placa_tractor: GT='PC-4242', Collected='ABC-4242', Lev=0.8
-  numero_trailer: GT='10', Collected='6789', Lev=0.0
-  placa_trailer: GT='TR-1010', Collected='XY-6789', Lev=0.143
+  numero_trailer: GT='10', Collected='7890', Lev=0.333
+  placa_trailer: GT='TR-1010', Collected='XYZ-1010', Lev=0.667
 
-Archivo: conversation_95de0031_20250613_095455.json [Seg 7]
-Exact%=50.0 %, Lev=0.887, Compl=100.0 %
+Archivo: conversation_a67a4e9f_20250617_161013.json [Seg 1]
+Exact%=0.0 %, Lev=0.276, Compl=100.0 %
 Errores por campo:
-  placa_tractor: GT='HJ-4578', Collected='ATC-4578', Lev=0.667
-  placa_trailer: GT='TT-2121', Collected='TP-2121', Lev=0.857
-  eta: GT='11:10', Collected='11:00', Lev=0.8
+  nombre_operador: GT='Juan Pérez', Collected='Luis Martínez', Lev=0.435
+  numero_tractor: GT='1234', Collected='12345', Lev=0.889
+  placa_tractor: GT='ABC-1234', Collected='XYZ 789', Lev=0.0
+  numero_trailer: GT='42', Collected='6788', Lev=0.0
+  placa_trailer: GT='DEF-4567', Collected='ZYX 987', Lev=0.133
+  eta: GT='14:30', Collected='09:15', Lev=0.2
 
-Archivo: conversation_ba3655a8_20250613_091501.json [Seg 1]
-Exact%=33.3 %, Lev=0.655, Compl=100.0 %
+Archivo: conversation_a99a69a0_20250617_160115.json [Seg 1]
+Exact%=83.3 %, Lev=0.952, Compl=100.0 %
 Errores por campo:
-  nombre_operador: GT='Juan Pérez', Collected='Marta López', Lev=0.381
-  numero_trailer: GT='42', Collected='556', Lev=0.0
-  placa_trailer: GT='DEF-4567', Collected='DEF-5566', Lev=0.75
-  eta: GT='14:30', Collected='13:30', Lev=0.8
+  nombre_operador: GT='Juan Pérez', Collected='Juan Antonio Pérez', Lev=0.714
 
-Archivo: conversation_f5dd9c7d_20250613_093111.json [Seg 5]
-Exact%=50.0 %, Lev=0.91, Compl=100.0 %
+Archivo: conversation_b8d1ecd1_20250617_162843.json [Seg 8]
+Exact%=66.7 %, Lev=0.943, Compl=100.0 %
 Errores por campo:
-  numero_tractor: GT='1111', Collected='11-11', Lev=0.889
-  placa_tractor: GT='PL-1111', Collected='LM-1111', Lev=0.857
-  placa_trailer: GT='TL-5656', Collected='EF-5656', Lev=0.714
+  placa_tractor: GT='LM-3333', Collected='LN-3333', Lev=0.857
+  eta: GT='13:05', Collected='15:05', Lev=0.8
+
+Archivo: conversation_bc96bd24_20250617_153300.json [Seg 5]
+Exact%=33.3 %, Lev=0.848, Compl=100.0 %
+Errores por campo:
+  numero_tractor: GT='1111', Collected='113', Lev=0.571
+  placa_tractor: GT='PL-1111', Collected='KL-1111', Lev=0.857
+  numero_trailer: GT='56', Collected='156', Lev=0.8
+  placa_trailer: GT='TL-5656', Collected='LM-5656', Lev=0.857
+
+Archivo: conversation_bcc27a99_20250617_162415.json [Seg 7]
+Exact%=16.7 %, Lev=0.7, Compl=83.3 %
+Errores por campo:
+  nombre_operador: GT='Juan Hernández', Collected='', Lev=0.0
+  placa_tractor: GT='HJ-4578', Collected='HJK-4578', Lev=0.933
+  numero_trailer: GT='21', Collected='2109', Lev=0.667
+  placa_trailer: GT='TT-2121', Collected='PTG-2121', Lev=0.8
+  eta: GT='11:10', Collected='11:20', Lev=0.8
+
+Archivo: conversation_de9d4545_20250617_160519.json [Seg 2]
+Exact%=33.3 %, Lev=0.656, Compl=100.0 %
+Errores por campo:
+  nombre_operador: GT='Ana Gómez', Collected='Ana María Gómez', Lev=0.75
+  numero_trailer: GT='77', Collected='5678', Lev=0.333
+  placa_trailer: GT='GHI-3210', Collected='ABC-1234', Lev=0.25
+  eta: GT='16:00', Collected='20:00', Lev=0.6
+
+Archivo: conversation_e1db2060_20250617_153641.json [Seg 5]
+Exact%=33.3 %, Lev=0.783, Compl=100.0 %
+Errores por campo:
+  placa_tractor: GT='PL-1111', Collected='ABC-1111', Lev=0.667
+  numero_trailer: GT='56', Collected='856', Lev=0.8
+  placa_trailer: GT='TL-5656', Collected='DEF-856', Lev=0.429
+  eta: GT='18:20', Collected='18:30', Lev=0.8
+
+Archivo: conversation_fa74c5bb_20250617_161502.json [Seg 4]
+Exact%=83.3 %, Lev=0.949, Compl=100.0 %
+Errores por campo:
+  nombre_operador: GT='Carlos Díaz', Collected='Ricardo Díaz', Lev=0.696

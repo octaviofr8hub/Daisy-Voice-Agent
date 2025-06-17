@@ -1,0 +1,49 @@
+{
+  "session_id": "4594d240",
+  "driver_details": {
+    "nombre_operador": "Ricardo Vega"
+  },
+  "tractor_details": {
+    "numero_tractor": "365709",
+    "placa_tractor": "ER-5888"
+  },
+  "trailer_details": {
+    "numero_trailer": "901",
+    "placa_trailer": "II-1999"
+  },
+  "eta_details": {
+    "eta": ""
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T15:52:39.850140",
+      "role": "system",
+      "content": "Nombre del operador registrado: Ricardo Vega"
+    },
+    {
+      "timestamp": "2025-06-17T15:52:54.949230",
+      "role": "system",
+      "content": "Número de tractor registrado: 365709"
+    },
+    {
+      "timestamp": "2025-06-17T15:53:11.957102",
+      "role": "system",
+      "content": "Placas de tractor registradas: ER-5888"
+    },
+    {
+      "timestamp": "2025-06-17T15:53:27.062372",
+      "role": "system",
+      "content": "Número de tráiler registrado: 901"
+    },
+    {
+      "timestamp": "2025-06-17T15:53:44.444212",
+      "role": "system",
+      "content": "Placas de tráiler registradas: II-1999"
+    },
+    {
+      "timestamp": "2025-06-17T15:53:48.139580",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}
