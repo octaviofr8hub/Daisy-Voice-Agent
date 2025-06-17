@@ -1,0 +1,209 @@
+{
+  "session_id": "b44e86fc",
+  "driver_details": {
+    "nombre_operador": "Juan Pérez"
+  },
+  "tractor_details": {
+    "numero_tractor": "1234",
+    "placas_tractor": "ABC-1234"
+  },
+  "trailer_details": {
+    "numero_trailer": "42",
+    "placas_trailer": "BF-4567"
+  },
+  "eta_details": {
+    "eta": "14:30"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-16T18:51:52.138658",
+      "role": "assistant",
+      "content": "\n¡Hola, qué tal! Soy Daisy, vamos a completar tu registro. Primero, dime tu nombre completo, ¿vale?\n"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:03.619636",
+      "role": "user",
+      "content": "mi nombre con Pérez"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:05.253080",
+      "role": "assistant",
+      "content": "¡Chido! Entendí que tu nombre completo es M i   N o m b r e   C o n   P é r e z, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:17.281218",
+      "role": "user",
+      "content": "no, Mi nombre es Juan Pérez"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:18.487921",
+      "role": "assistant",
+      "content": "¡Chido! Entendí, tu nombre completo es Mi Nombre Con Pérez, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:26.865164",
+      "role": "user",
+      "content": "no es Juan Pérez"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:28.417192",
+      "role": "assistant",
+      "content": "¡Chido! Tu nombre completo es Mi Nombre Con Pérez, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:37.110487",
+      "role": "user",
+      "content": "no Juan Pérez"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:38.225147",
+      "role": "assistant",
+      "content": "Órale, cuéntame, ¿cuál es tu nombre completo?"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:43.942733",
+      "role": "user",
+      "content": "Juan Pérez"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:46.252572",
+      "role": "assistant",
+      "content": "¡Chido! Entonces, tu nombre completo es Juan Pérez, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:53.396000",
+      "role": "user",
+      "content": "sí"
+    },
+    {
+      "timestamp": "2025-06-16T18:52:54.474517",
+      "role": "assistant",
+      "content": "Órale, cuéntame, ¿cuál es el número de tu tractor?"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:01.561251",
+      "role": "user",
+      "content": "1234"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:02.790220",
+      "role": "assistant",
+      "content": "¡Chido! Anoté el número de tractor como 1234, ¿está correcto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:13.482362",
+      "role": "user",
+      "content": "sí"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:14.909271",
+      "role": "assistant",
+      "content": "Órale, ¿cuáles son las placas de tu tractor? Por ejemplo, ABC-1234."
+    },
+    {
+      "timestamp": "2025-06-16T18:53:28.529478",
+      "role": "user",
+      "content": "la aplica contractor son ABC 1234"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:30.709105",
+      "role": "assistant",
+      "content": "¡Chido! Las placas del tractor son A B C - 1 2 3 4, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:42.355928",
+      "role": "user",
+      "content": "sí"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:43.375614",
+      "role": "assistant",
+      "content": "¡Órale! Ahora, cuéntame, ¿cuál es el número de tu tráiler?"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:52.990130",
+      "role": "user",
+      "content": "42"
+    },
+    {
+      "timestamp": "2025-06-16T18:53:54.292569",
+      "role": "assistant",
+      "content": "¡Chido! Entonces, el número de tráiler es 42, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:06.363075",
+      "role": "user",
+      "content": "sí"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:07.723215",
+      "role": "assistant",
+      "content": "Órale, cuéntame, ¿cuáles son las placas del tráiler?"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:16.666950",
+      "role": "user",
+      "content": "Las placas del tráiler son b?"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:18.826944",
+      "role": "assistant",
+      "content": "Órale, ahora cuéntame, ¿cuáles son las placas del tráiler?"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:30.467595",
+      "role": "user",
+      "content": "DS 4567"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:31.977578",
+      "role": "assistant",
+      "content": "Órale, ahora cuéntame, ¿cuáles son las placas del tráiler? Por ejemplo, XYZ-5678."
+    },
+    {
+      "timestamp": "2025-06-16T18:54:46.384296",
+      "role": "user",
+      "content": "bts 44567"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:48.062912",
+      "role": "assistant",
+      "content": "Órale, ahora dime, ¿cuáles son las placas del tráiler?"
+    },
+    {
+      "timestamp": "2025-06-16T18:54:59.071773",
+      "role": "user",
+      "content": "bf 4567"
+    },
+    {
+      "timestamp": "2025-06-16T18:55:01.870826",
+      "role": "assistant",
+      "content": "¡Chido! Entiendo que las placas del tráiler son B F - 4 5 6 7, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:55:11.949143",
+      "role": "user",
+      "content": "sí"
+    },
+    {
+      "timestamp": "2025-06-16T18:55:13.163408",
+      "role": "assistant",
+      "content": "Órale, ahora cuéntame, ¿cuál es tu ETA? Por ejemplo, 14:30."
+    },
+    {
+      "timestamp": "2025-06-16T18:55:22.890979",
+      "role": "user",
+      "content": "14:30"
+    },
+    {
+      "timestamp": "2025-06-16T18:55:24.563805",
+      "role": "assistant",
+      "content": "¡Chido! Tu ETA es 14:30, ¿cierto?"
+    },
+    {
+      "timestamp": "2025-06-16T18:55:31.527808",
+      "role": "user",
+      "content": "sí"
+    }
+  ]
+}
