@@ -1,0 +1,54 @@
+{
+  "session_id": "dcb1141f",
+  "driver_details": {
+    "nombre_operador": "Luis González"
+  },
+  "tractor_details": {
+    "numero_tractor": "1234",
+    "placa_tractor": "ABC-2345"
+  },
+  "trailer_details": {
+    "numero_trailer": "542",
+    "placa_trailer": "DEF-4567"
+  },
+  "eta_details": {
+    "eta": "14:30"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T18:45:36.673022",
+      "role": "system",
+      "content": "Nombre del operador registrado: Luis González"
+    },
+    {
+      "timestamp": "2025-06-17T18:45:59.836171",
+      "role": "system",
+      "content": "Número de tractor registrado: 1234"
+    },
+    {
+      "timestamp": "2025-06-17T18:46:18.184207",
+      "role": "system",
+      "content": "Placas de tractor registradas: ABC-2345"
+    },
+    {
+      "timestamp": "2025-06-17T18:46:36.366506",
+      "role": "system",
+      "content": "Número de tráiler registrado: 542"
+    },
+    {
+      "timestamp": "2025-06-17T18:46:55.842550",
+      "role": "system",
+      "content": "Placas de tráiler registradas: DEF-4567"
+    },
+    {
+      "timestamp": "2025-06-17T18:47:15.425001",
+      "role": "system",
+      "content": "ETA registrado: 14:30"
+    },
+    {
+      "timestamp": "2025-06-17T18:47:29.284269",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

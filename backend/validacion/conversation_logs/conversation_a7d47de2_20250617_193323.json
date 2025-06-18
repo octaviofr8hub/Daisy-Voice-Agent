@@ -1,0 +1,49 @@
+{
+  "session_id": "a7d47de2",
+  "driver_details": {
+    "nombre_operador": ""
+  },
+  "tractor_details": {
+    "numero_tractor": "3333",
+    "placa_tractor": "LM-3333"
+  },
+  "trailer_details": {
+    "numero_trailer": "50",
+    "placa_trailer": "TR-5050"
+  },
+  "eta_details": {
+    "eta": "13:05"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T19:32:12.936451",
+      "role": "system",
+      "content": "Número de tractor registrado: 3333"
+    },
+    {
+      "timestamp": "2025-06-17T19:32:13.648811",
+      "role": "system",
+      "content": "Placas de tractor registradas: LM-3333"
+    },
+    {
+      "timestamp": "2025-06-17T19:32:38.934855",
+      "role": "system",
+      "content": "Número de tráiler registrado: 50"
+    },
+    {
+      "timestamp": "2025-06-17T19:32:39.746203",
+      "role": "system",
+      "content": "Placas de tráiler registradas: TR-5050"
+    },
+    {
+      "timestamp": "2025-06-17T19:33:00.128285",
+      "role": "system",
+      "content": "ETA registrado: 13:05"
+    },
+    {
+      "timestamp": "2025-06-17T19:33:23.793356",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}

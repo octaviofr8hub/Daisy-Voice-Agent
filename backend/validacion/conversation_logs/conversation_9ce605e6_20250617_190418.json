@@ -1,0 +1,54 @@
+{
+  "session_id": "9ce605e6",
+  "driver_details": {
+    "nombre_operador": "Marta López"
+  },
+  "tractor_details": {
+    "numero_tractor": "1111",
+    "placa_tractor": "ABCD123"
+  },
+  "trailer_details": {
+    "numero_trailer": "1056",
+    "placa_trailer": "DEF-1056"
+  },
+  "eta_details": {
+    "eta": "18:20"
+  },
+  "conversation_log": [
+    {
+      "timestamp": "2025-06-17T19:03:00.097556",
+      "role": "system",
+      "content": "Nombre del operador registrado: Marta López"
+    },
+    {
+      "timestamp": "2025-06-17T19:03:12.340990",
+      "role": "system",
+      "content": "Número de tractor registrado: 1111"
+    },
+    {
+      "timestamp": "2025-06-17T19:03:14.539370",
+      "role": "system",
+      "content": "Placas de tractor registradas: ABCD123"
+    },
+    {
+      "timestamp": "2025-06-17T19:03:29.729809",
+      "role": "system",
+      "content": "Número de tráiler registrado: 1056"
+    },
+    {
+      "timestamp": "2025-06-17T19:03:45.252984",
+      "role": "system",
+      "content": "Placas de tráiler registradas: DEF-1056"
+    },
+    {
+      "timestamp": "2025-06-17T19:04:03.240064",
+      "role": "system",
+      "content": "ETA registrado: 18:20"
+    },
+    {
+      "timestamp": "2025-06-17T19:04:18.169951",
+      "role": "system",
+      "content": "Guardando datos en JSON"
+    }
+  ]
+}
