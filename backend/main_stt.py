@@ -2,8 +2,9 @@ from __future__ import annotations
 import asyncio
 import os
 from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
+from livekit.agents.stt import StreamAdapter, SpeechStream
 from livekit import rtc
-from livekit.plugins import openai, elevenlabs
+from livekit.plugins import openai, elevenlabs, silero
 from dotenv import load_dotenv
 from daisy_assistant_fnc import DaisyAssistantFnc
 from daisy_fsm_stt import ConversationStateMachine
@@ -11,7 +12,11 @@ from prompts import INSTRUCTIONS
 import logging
 import openai as openai_client_asyn
 import time
+from openai import OpenAIError
 import wave
+from pydub import AudioSegment
+import io
+import numpy as np
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -52,6 +57,8 @@ async def entrypoint(ctx: JobContext):
         encoding="mp3_44100_128",
     )
 
+    
+
     # Configura el AudioSource para publicar audio
     audio_source = rtc.AudioSource(sample_rate=44100, num_channels=1)
     track = rtc.LocalAudioTrack.create_audio_track("agent-mic", audio_source)
@@ -64,10 +71,23 @@ async def entrypoint(ctx: JobContext):
     stt = openai.STT(
         language="es",
         model="whisper-1",
+        detect_language=True,
         api_key=os.getenv("OPENAI_API_KEY")
     )
     logger.debug("STT configurado")
 
+    # Configurar VAD con Silero
+    vad = silero.VAD.load(
+        sample_rate=16000,  # Silero solo soporta 8000 o 16000 Hz
+        activation_threshold=0.5,  # Sensibilidad para detectar voz
+        min_speech_duration=0.5,  # 500ms de voz mínima
+        min_silence_duration=0.55,  # 550ms de silencio para separar
+        prefix_padding_duration=0.5,  # 500ms de padding inicial
+        max_buffered_speech=30.0,  # 30 segundos de buffer máximo
+        force_cpu=True  # Por compatibilidad
+    )
+    logger.debug("VAD configurado")
+    
     # Inicializa el contexto de funciones
     assistant_fnc = DaisyAssistantFnc()
     logger.debug("DaisyAssistantFnc inicializado")
@@ -97,7 +117,7 @@ async def entrypoint(ctx: JobContext):
     async def handle_audio_stream(track: rtc.RemoteAudioTrack, participant_identity: str):
         logger.debug(f"Procesando pista de audio para participante: {participant_identity}")
         stream = rtc.AudioStream(track)
-        audio_buffer = []
+        stt_stream = StreamAdapter(stt=stt, vad=vad)
         async for event in stream:
             if not hasattr(event, 'frame'):
                 logger.warning(f"Evento sin frame: {type(event)}")
@@ -106,44 +126,42 @@ async def entrypoint(ctx: JobContext):
             if not isinstance(frame, rtc.AudioFrame):
                 logger.warning(f"Frame no es AudioFrame: {type(frame)}")
                 continue
-            audio_buffer.append(frame)
-            if len(audio_buffer) >= 50:  # Ajustar según latencia
-                daisy_state_machine.audio_buffer.extend(audio_buffer)
-                audio_buffer = []
-                if len(daisy_state_machine.audio_buffer) >= 100:  # Procesar audio
-                    try:
-                        logger.debug(f"Procesando {len(daisy_state_machine.audio_buffer)} frames para STT")
-                        # Guardar audio para depuración
-                        wav_data = rtc.combine_audio_frames(daisy_state_machine.audio_buffer).to_wav_bytes()
-                        timestamp = time.strftime("%Y%m%d_%H%M%S")
-                        with wave.open(f"debug_audio_{timestamp}.wav", "wb") as wf:
-                            wf.setnchannels(1)
-                            wf.setsampwidth(2)  # 16-bit
-                            wf.setframerate(44100)
-                            wf.writeframes(wav_data)
-                        speech_event = await stt.recognize(daisy_state_machine.audio_buffer)
-                        text = speech_event.alternatives[0].text
-                        logger.debug(f"Transcripción cruda: {text}")
-                        if text.strip():
-                            msg = llm.ChatMessage(role="user", content=text)
-                            logger.debug(f"Usuario dijo: {text}")
-                            await daisy_state_machine.process_user_input(msg)
-                        daisy_state_machine.audio_buffer.clear()
-                    except Exception as e:
-                        logger.error(f"Error al procesar audio: {str(e)}")
-                    '''
-                    try:
-                        logger.debug(f"Procesando {len(daisy_state_machine.audio_buffer)} frames para STT")
-                        speech_event = await stt.recognize(daisy_state_machine.audio_buffer)
-                        text = speech_event.alternatives[0].text
-                        if text.strip():
-                            msg = llm.ChatMessage(role="user", content=text)
-                            logger.debug(f"Usuario dijo: {text}")
-                            await daisy_state_machine.process_user_input(msg)
-                        daisy_state_machine.audio_buffer.clear()
-                    except Exception as e:
-                        logger.error(f"Error al procesar audio: {str(e)}")
-                    '''
+            # Remuestrear de 44100 Hz a 16000 Hz usando pydub
+            try:
+                # Convertir AudioFrame a bytes
+                frame_data = np.frombuffer(frame.data, dtype=np.int16)
+                audio_segment = AudioSegment(
+                    data=frame_data.tobytes(),
+                )
+                # Remuestrear a 16000 Hz
+                resampled_audio = audio_segment.set_frame_rate(16000)
+                # Convertir de vuelta a bytes para crear un nuevo AudioFrame
+                resampled_data = np.frombuffer(resampled_audio.raw_data, dtype=np.int16)
+                resampled_frame = rtc.AudioFrame(
+                    data=resampled_data.tobytes(),
+                    sample_rate=16000,
+                    num_channels=1,
+                    samples_per_channel=len(resampled_data)
+                )
+                stt_stream.push_frame(resampled_frame)
+            except Exception as e:
+                logger.error(f"Error al remuestrear frame: {str(e)}")
+                continue
+            try:
+                speech_event = await stt_stream.flush()
+                if speech_event and hasattr(speech_event, 'text') and speech_event.text.strip():
+                    text = speech_event.text
+                    logger.debug(f"Transcripción cruda: {text}")
+                    msg = llm.ChatMessage(role="user", content=text)
+                    logger.debug(f"Usuario dijo: {text}")
+                    await daisy_state_machine.process_user_input(msg)
+            except OpenAIError as e:
+                logger.error(f"Error de OpenAI en STT: {str(e)}")
+            except Exception as e:
+                logger.error(f"Error inesperado en STT: {str(e)}")
+        await stt_stream.aclose()
+        logger.debug("STT stream cerrado")
+
     # Escucha eventos de pistas
     def on_track_subscribed(publication: rtc.TrackPublication, participant: rtc.RemoteParticipant):
         logger.debug(f"Pista suscrita: {publication.sid}, participante: {participant.identity}")
