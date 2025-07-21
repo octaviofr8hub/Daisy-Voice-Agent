@@ -1,0 +1,26 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_7d2ae52ec767",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "M\u00fasica."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_32fa13b9d1b8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, hablando de parte de Freight Technologies. Estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

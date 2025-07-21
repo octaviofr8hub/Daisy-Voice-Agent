@@ -1,0 +1,55 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_d0e06ceab0eb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_55768dc47d52",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jos\u00e9 Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_af5275a351e3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jos\u00e9 Octavio. \u00bfPodr\u00edas confirmar si as\u00ed est\u00e1 correcto tu nombre: Jos\u00e9 Octavio?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6f8dd5bc56fb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e1f6e705f082",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No es forzocable."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

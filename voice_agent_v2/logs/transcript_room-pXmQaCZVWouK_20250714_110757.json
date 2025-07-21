@@ -1,0 +1,470 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_5708ff615bfa",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y bueno,"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5006e7bd905a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, hablando de parte de Freight Technologies. Estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ed3766b13492",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, mi nombre es Jorge Octavio Nicol\u00e1s D\u00edaz."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6b580d601c28",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio Nicol\u00e1s D\u00edaz. Ahora, \u00bfpodr\u00edas proporcionarme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_c0d25a06301f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y nueve, ochenta y siete."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a189151a2c6c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Ahora necesito las placas de tu tractor. Por favor, dime letra por letra, como A de \u00c1guila, B de Burro, y los n\u00fameros como uno, dos, tres."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4dae5a57e611",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ecueta M 4739."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0c6a9ea69f8d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para confirmar, las placas de tu tractor son E de Elefante, M de Mano, guion, cuatro, siete, tres, nueve. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ed91163b0455",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, las letras no est\u00e1n bien, los n\u00fameros s\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1a60bdf88a09",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento por eso. Por favor, dime nuevamente las letras de tus placas, una por una."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_2d1067af7d9c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfDe dedito?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e2c691dad66a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Zeta de zapato."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_704cf9a6be29",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "IM"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f2148db711c1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, entonces las placas correctas son D de Dedo, Z de Zapato, I de Iguana, M de Mano, guion, cuatro, siete, tres, nueve. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6ba84a005246",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No siguen estando mal."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_30169d2d38bf",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las letras."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_dad799ade942",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las letras siguen estando mal."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_fdecc35f6316",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Mis disculpas, vamos a intentar de nuevo. Por favor, dime las letras de las placas de tu tractor, una por una."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ba46b1bb31e4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfDe trabajo?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b6785d5aee30",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Eh"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0151d9a679a2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfQu\u00e9 tal el zapato?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_31d540a74ad3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Zeta de zapato?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8e8d2603fa86",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Eme de mam\u00e1."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e553e0badd36",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Entonces las placas correctas son T de Tigre, Z de Zapato, M de Mano, guion, cuatro, siete, tres, nueve. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_40d894528d96",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_159ffe179968",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_693751fbbd4d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, ya tenemos el n\u00famero y las placas del tractor. Ahora, \u00bfpodr\u00edas darme el n\u00famero de tu tr\u00e1iler, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7abfee9e54e6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfQu\u00e9 siguen?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_07fef186d281",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "S\u00ed, necesito el n\u00famero de tu tr\u00e1iler, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f7a5e1a68c9c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tr\u00e1iler es cuarenta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b33bfa343bb6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Ahora necesito las placas de tu tr\u00e1iler. Por favor, dime letra por letra y n\u00famero por n\u00famero, como hicimos antes."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b4c116431682",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ire yate"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_daac6014a6e3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hacha de hacha"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_bd76183c2521",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bebe burro?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4e85827a7739",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y siete."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4f2767fb0548",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente, entonces las placas de tu tr\u00e1iler son I de Iguana, H de Hacha, B de Burro, guion, uno, cuatro, siete. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_8e7c5294359b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El env\u00e9s de la I de iguana es."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5489e93ee573",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y y."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6b86ead0b257",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por la correcci\u00f3n. Entonces las placas correctas del tr\u00e1iler son Y de Yegua, H de Hacha, B de Burro, guion, uno, cuatro, siete. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d2251666b925",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6f4103575eb0",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, hemos registrado las placas correctamente. Ahora, \u00bfpodr\u00edas decirme tu ETA, o sea, tu tiempo estimado de llegada?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_491e3e69781a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Diecisiete cuarenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9ba0b35463dc",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Por \u00faltimo, necesitar\u00eda tu correo electr\u00f3nico para completar el registro, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0d38ea1f7ac2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Es jorgeoctavionicolasdiaz@gmail.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1d8d7531cc37",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, entonces el correo electr\u00f3nico es jorgeoctavionicolasdiaz@gmail.com. \u00bfEs correcto?"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_00e752d45e15",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5f3064ae4014",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Listo! He registrado toda tu informaci\u00f3n exitosamente. Si necesitas algo m\u00e1s, estar\u00e9 aqu\u00ed para ayudarte. \u00a1Buen viaje!"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a0f250777b1b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Gracias igualmente, hasta luego."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

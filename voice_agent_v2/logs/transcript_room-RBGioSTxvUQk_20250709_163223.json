@@ -1,0 +1,16 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_1769ad4cce85",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

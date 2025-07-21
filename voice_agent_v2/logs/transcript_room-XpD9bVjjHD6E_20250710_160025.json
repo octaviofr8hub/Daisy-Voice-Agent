@@ -1,0 +1,45 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_32159398d5ab",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\nHola, \u00a1qu\u00e9 buena onda tenerte! Soy Daisy, necesito unos datos para tu ruta. \u00bfCu\u00e1l es tu nombre completo?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1e52615a3e12",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y ah\u00ed es como ya empieza."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b95c07526122",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Otra vez a pedir los datos, \u00bfno?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_32c7bbcd615b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "As\u00ed es, necesito recolectar algunos datos"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

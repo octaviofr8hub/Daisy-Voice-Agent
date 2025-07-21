@@ -1,0 +1,26 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_c461ebad0720",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9e6f7e7ee669",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hola, bienvenido al servicio de registro. Para comenzar, \u00bfpuedes proporcionarme tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

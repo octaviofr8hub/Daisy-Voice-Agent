@@ -1,0 +1,26 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_b6c2e6092256",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_aa39d46267b5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hola, bienvenido a Freight Technologies [pronunciado en ingl\u00e9s: freight technologies]. Soy Daisy, tu asistente. Estoy aqu\u00ed para ayudarte a completar tu registro. Para comenzar, \u00bfpuedes decirme tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

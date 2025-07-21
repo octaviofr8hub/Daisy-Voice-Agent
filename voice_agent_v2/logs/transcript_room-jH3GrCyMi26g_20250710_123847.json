@@ -1,0 +1,93 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_3b79c9b182db",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 onda! Soy Daisy, estoy para registrarte. \u00bfMe das tu nombre completo, \u00bfeh?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4bef97611e6d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Por supuesto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2d53f8632fe8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_833c326a8f1d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Porcioctamio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_dd5d0efd15d8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ocho cambio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1fb911e8f4aa",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_76aa3df0fcc0",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio. \u00bfVamos bien con ese nombre completo?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e80ab4decdb7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6ae6bcc9d5bf",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Genial. Ahora, \u00bfpuedes darme el n\u00famero de tractor?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

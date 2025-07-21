@@ -1,0 +1,47 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_1ac2191d88d5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7ddd99aefe4d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hola, \u00a1qu\u00e9 buena onda tenerte! Soy Daisy, hablando de parte de Freight Technologies. Necesito unos datos para tu ruta. \u00bfCu\u00e1l es tu nombre completo?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_aa68425bbfd1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ahorita no puedo, ll\u00e1mame en diez segundos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a2334ff35842",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "De acuerdo te volver\u00e9 a llamar en 10 segundos, gracias."
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": [
+    "[Reschedule] carrier requested callback on 10"
+  ]
+}

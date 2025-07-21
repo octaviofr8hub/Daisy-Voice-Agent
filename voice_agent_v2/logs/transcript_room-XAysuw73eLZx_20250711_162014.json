@@ -1,0 +1,36 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_8cf0128f4057",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9d99921cfe73",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, hablando de parte de Freight Technologies. Estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_3e7673557f35",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Me encanta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

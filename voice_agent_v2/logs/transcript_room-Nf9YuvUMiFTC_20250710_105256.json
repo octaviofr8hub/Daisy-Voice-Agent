@@ -1,0 +1,45 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_f74b7b3ab2af",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy, aqu\u00ed para tu registro de carrier. \u00bfMe das tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_27dc692d5985",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Juan P\u00e9rez."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_961a2d451e6a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Juan P\u00e9rez. \u00bfCu\u00e1l es el n\u00famero de tu tractor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9174e0b5922e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

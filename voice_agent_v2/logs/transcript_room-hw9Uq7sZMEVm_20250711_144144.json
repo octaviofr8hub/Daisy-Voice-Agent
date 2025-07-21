@@ -1,0 +1,65 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_d6473fe43192",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_631c44345dde",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Bienvenido a Freight Technologies. \u00bfC\u00f3mo puedo ayudarte hoy?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_2fedaf5d4334",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Un saludo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_725cb135609a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfY el saludo?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_dc6eb6775dde",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfPor qu\u00e9 no pronunciaste el saludo?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_185bc0d57792",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Mis disculpas por eso! \u00a1Hola! \u00bfEn qu\u00e9 puedo asistirte hoy?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

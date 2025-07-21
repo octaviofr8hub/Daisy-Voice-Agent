@@ -1,0 +1,45 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_299b829bd564",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_d4b3a3280707",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c37d686e75b7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "agregu\u00e9."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6edb14eff890",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Perfecto! Vamos a"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

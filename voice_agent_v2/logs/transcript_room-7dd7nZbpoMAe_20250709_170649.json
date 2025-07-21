@@ -1,0 +1,121 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_9834aaa19695",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4f3bd851f20f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_54e96cacc6f4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Ahora, \u00bfpodr\u00edas proporcionarme el n\u00famero de tu tractor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6af6bb53cf8e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y siete"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7e5332a45530",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, el n\u00famero de tu tractor es 37, \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_20b05aa4dad1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es ese."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_de01ca68d565",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, Jorge. Ahora necesito las placas del tractor. Puedes decirlas en este formato: Letra A, Letra B, Letra C, seguido de los n\u00fameros."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_bf660ecb1b9b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ne traek\u00ed"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_80eed4864f28",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra P."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_837a5b757850",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. \u00bfY podr\u00edas"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_79565de1f3f9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_63bae272c367",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "No te preocupes, Jorge. Cuando tengas las placas del tractor, por favor h\u00e1zmelo saber. \u00bfContinuamos"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

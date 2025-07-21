@@ -1,0 +1,267 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_7e8d28d351ec",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy, aqu\u00ed para tu registro de carrier. \u00bfMe das tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0cace4855515",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Juan P\u00e9rez"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2fc0eb4f1d98",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Juan P\u00e9rez. Ahora, \u00bfpodr\u00edas darme el n\u00famero del tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0d00601438d8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "32."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2ac176ffa24f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, el n\u00famero del tractor es 32. Ahora, necesito las placas del tractor. Por favor, deletrea las letras utilizando palabras clave."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d5c3dc8b5d44",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Neutral,"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_de106b94e021",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "B de Beto"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_34c5af34c56c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "B de Burro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_04070ae3dee6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "D de Dedo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f4c12145b00e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias."
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_9861c13650b3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "E de Elefante,"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cfbbbb641f75",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_511a189b5197",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "252"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b9aa730729e4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, las placas del tractor son BBDE-252. Ahora, \u00bfme podr\u00edas dar el n\u00famero del tr\u00e1iler?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a65e3f05c0d4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "42"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d33e57137217",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "ya ya te lo di"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_aa5489da4418",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Disculpa, tienes raz\u00f3n, el n\u00famero del tr\u00e1iler es 42. Ahora, \u00bfme puedes proporcionar las placas del tr\u00e1iler usando palabras clave?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9f19565cfdcf",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "K de Kilo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_afde2130702d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "U de queso"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_43b14f22c258",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "U U, como U."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2a7769c254ab",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "a@g.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_641cbfa055e7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "G."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4950428fce23",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perm\u00edteme un"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_1fcf01a06f71",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "significara m\u00e1s complicado"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1c43075b834b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Parece que hubo un error al ingresar el correo electr\u00f3nico. Vamos paso por paso. Regr\u00e9same el correo completo usando palabras clave para las letras, por favor."
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_2614ec4062e2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yo no te ped\u00ed el correo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_490db9b75e20",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Mis disculpas por la confusi\u00f3n. Concentr\u00e9monos en las placas del tr\u00e1iler. Hasta ahora tenemos \"K de Kilo, U de Uva\". \u00bfPodr\u00edas continuar, por favor?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

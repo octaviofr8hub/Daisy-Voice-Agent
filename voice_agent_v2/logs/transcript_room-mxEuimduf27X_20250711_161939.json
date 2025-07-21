@@ -1,0 +1,36 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_9e6ca496143b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9b305db94913",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno, mam\u00e1."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2b83b355fb88",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hola, \u00a1qu\u00e9 buena onda tenerte! Soy Daisy, hablando de parte de Freight Technologies. Necesito unos datos para tu ruta. \u00bfCu\u00e1l es tu nombre completo?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

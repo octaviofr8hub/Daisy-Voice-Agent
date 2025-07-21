@@ -1,0 +1,569 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_72ce0dd6b1da",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6b50e9047d77",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_39f070fb9e4b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Muchas gracias, Jorge. \u00bfPodr\u00edas darme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_bab5d34b43cf",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tractor es treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_74914425d413",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Entonces tu n\u00famero de tractor es \"32\", \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6f604148e8b6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cfa60fdb2fb5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, \u00bfme podr\u00edas proporcionar las placas de tu tractor? Recuerda que puedes deletrearlas, por ejemplo: \"Letra A, letra B, Letra C y seguido de los n\u00fameros\"."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1e277e431004",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra \"P\""
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_796c8483612b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra F."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_88b21a174f4e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4cd69538e2af",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "W"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6f06929fa22a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Perfecto! Llevamos \"PFW\". Ahora, \u00bfme podr\u00edas decir los n\u00fameros que siguen?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_5ac764120cc0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "En vez de la letra P ser\u00eda la letra T?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4eb320df80b8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y los n\u00fameros ser\u00edan ciento cincuenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_60f2af4ea820",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Correcto, entonces las placas de tu tractor son \"TFW-155\", \u00bfes eso correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9dff781cc00d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_67659e584a03",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, fue error m\u00edo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b61e000655b9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1No te preocupes! Ahora, \u00bfpuedes darme el n\u00famero de tu tr\u00e1iler, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_da60371646f0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tr\u00e1iler es 144."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5fc5b84f1736",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Entonces, el n\u00famero de tu tr\u00e1iler es \"144\", \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_db8714fd6924",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_57bb540f1503",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, \u00bfpuedes proporcionarme las placas de tu tr\u00e1iler? No olvides que puedes deletrearlas de la misma manera."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_26b65f513f4b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra W"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e1727c251caf",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "letra Y, letra Z."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_babc987a1fca",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento veintiocho"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5f74f68820dc",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Las placas de tu tr\u00e1iler ser\u00edan \"WYZ-128\", \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d0da2bf4da12",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_144d19eb54aa",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente, Jorge. Ahora, \u00bfcu\u00e1l es tu hora estimada de llegada (ETA)? Recuerda indicarla en formato HH:MM."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6e3f3e7955b7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "17:45."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_85512e29d737",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, entonces tu ETA es a las 17:45, \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_dec93cff704e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, ser\u00eda esa hora."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_69f0a8cab7d9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Por \u00faltimo, \u00bfme puedes proporcionar tu correo electr\u00f3nico? Aseg\u00farate de deletrearlo letra por letra."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a7bece16a490",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "letra p min\u00fascula. N\u00famero cuatro. letra v min\u00fascula"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c5e9b9e95d31",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra es en min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_33e3ba619807",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "iletraje@gmail.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4fef99a7d1a5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Entonces tu correo electr\u00f3nico es \"p4vs@gmail.com\", \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e42f44db74e1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, o sea todo lo dem\u00e1s est\u00e1 correcto pero le har\u00eda falta el"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ba6adfdcf07c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La e min\u00fascula y la g min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_07cdfe3e83c8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perd\u00f3n, entonces corrigiendo, tu correo electr\u00f3nico es \"p4ves@gmail.com\", \u00bfcierto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_dcb9ba77e4a8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, ser\u00eda otra vez letra t min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_da3ac318b9bd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_33d446e40027",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra u min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_efbb9bd02863",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a3db7c5df2c9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfLe traes en min\u00fascula?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cef197013304",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y letra g min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ffd80c76f270",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perdona la confusi\u00f3n. Entonces, \u00bftu correo electr\u00f3nico es \"pte4ue0@gmail.com\"?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_16055c28eddd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c57bcbd9fc75",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo entiendo, vamos a tomarlo nuevamente desde el principio. Por favor, deletrea de nuevo tu correo electr\u00f3nico."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_5e356882d1ba",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra p min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ba7b56e91a50",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro,"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_81db2bb68e7b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra t min\u00fascula, n\u00famero cuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_998382631643",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra V min\u00fascula"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_789c9909e321",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2dd6396e31e5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra ese min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_355ea6e476c2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y letra g min\u00fascula?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c89f4646feeb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "@gmail.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1355cf853ce2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Entonces, tu correo electr\u00f3nico es \"p4t4v0s@gmail.com\", \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_014401151376",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, ese ser\u00eda."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

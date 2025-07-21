@@ -1,0 +1,26 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_bf62ffbf7b91",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hola."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_49e9090a1605",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Bienvenid@ a Freight Technologies, \u00bfen qu\u00e9 puedo ayudarte hoy?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

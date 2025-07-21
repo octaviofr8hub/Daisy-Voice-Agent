@@ -6,4 +6,6 @@ backend/*.sqlite
 venv/
 backend/*.json
 backend/*.env
+backend/venv/
 backend/conversation_logs/
+voice_agent_v2/outbound_call.json

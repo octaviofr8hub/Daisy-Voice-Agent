@@ -1,0 +1,55 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_1ea9fc7a2eb3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfBueno?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f077c4c9312b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Bienvenido a Freight Technologies. \u00bfMe podr\u00edas proporcionar tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a860084a640f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Pero porqu\u00ea?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_003042c98565",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Pero por qu\u00e9 no te presenta?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_09123e88c4b6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Claro! Soy Daisy, tu asistente de voz en Freight Technologies, y estoy aqu\u00ed para ayudarte con tu registro. \u00bfMe podr\u00edas proporcionar tu nombre completo para"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

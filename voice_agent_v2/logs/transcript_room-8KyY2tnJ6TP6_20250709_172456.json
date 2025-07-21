@@ -1,0 +1,132 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_14864a2e14ef",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9f75c3616534",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio Nicol\u00e1s D\u00edaz."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_acb7990a75d7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Gracias, Jorge! Ahora necesito el n\u00famero de tu tractor, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_c6b9a3868eac",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Cuarenta y tres."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_61b32efd183d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, el n\u00famero de tu tractor es 43, \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4e63569a52b0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Iniciece."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7712ceda9c22",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Muy bien. Ahora necesito que me des las placas del tractor. Recuerda que puedes deletrearlas mencionando \"letra\" antes de cada letra."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_42333811bc15",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Metra"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_55716138ab0e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ne traseta"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_219f6703fc38",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra Z."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_df2831d3c5d2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra X"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9e2900d5f76a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ana"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b973e075e1cd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Parece que hubo un error al capturar"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

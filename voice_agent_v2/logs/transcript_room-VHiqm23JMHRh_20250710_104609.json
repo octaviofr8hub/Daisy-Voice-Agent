@@ -1,0 +1,75 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_c1db92c979b1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy, aqu\u00ed para tu registro de carrier. \u00bfMe das tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ac4106b2aff3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfMe escuchaste?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cc6ac7e1350a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hola"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_64d695122be2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hola"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f7c829a21807",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy. \u00bfMe proporcionas tu nombre completo para comenzar el registro, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ef920118787f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bantering"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d415749ad9f4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "y luego"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

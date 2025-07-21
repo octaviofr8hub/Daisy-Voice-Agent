@@ -1,0 +1,35 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_6bf269700a47",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          ""
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_bfd0b244bbcb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_96cb601b58cd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Gracias por tomarte el tiempo de hablar conmigo. Estoy aqu\u00ed para ayudarte a completar tu registro. \n\nPara comenzar, \u00bfpuedes proporcionarme tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

@@ -1,0 +1,84 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_36dd84fe2477",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\n\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_20e58f9abe15",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e31316950111",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio. Ahora, \u00bfpodr\u00edas darme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b77145098945",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_41e13ce2ce6c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. \u00bfMe das las placas de tu tractor? Por favor, deletr\u00e9alo letra por letra, como A de \u00c1guila, B de Burro y los n\u00fameros como uno, dos, tres."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_dea76a7b7933",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "De regreso."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ac73e7eaafd4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "cabe kilo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b5372d6cfefc",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Judequeso y 144"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

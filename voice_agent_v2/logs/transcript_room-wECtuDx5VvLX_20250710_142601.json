@@ -1,0 +1,26 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_686745a8727e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hola?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0d63157b991a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! \u00bfC\u00f3mo puedo ayudarte hoy?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

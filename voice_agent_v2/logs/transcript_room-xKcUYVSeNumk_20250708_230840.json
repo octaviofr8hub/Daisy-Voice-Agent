@@ -1,0 +1,47 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_fdd4fe67137b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7301a8185f28",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hombres."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8668e64c6866",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entiendo que a veces no es buen momento. Si necesitas terminar la llamada, ind\u00edcame cu\u00e1nto tiempo debo esperar para volver a contactarte."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_24cf2e1e9ab1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "En cinco segundos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": [
+    "[Reschedule] carrier requested callback on 5"
+  ]
+}

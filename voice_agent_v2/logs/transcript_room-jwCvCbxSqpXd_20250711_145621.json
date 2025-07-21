@@ -1,0 +1,45 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_058037b68fb6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cd2b85494f61",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Bienvenido a Freight Technologies. \u00bfEn qu\u00e9 puedo ayudarte hoy?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_76d6fe6f1b48",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Alguien se salva."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cb12630fd9ce",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Claro, estar\u00e9 encantada de ayudarte. Para completar el registro, necesito algunos datos. \u00bfPodr\u00edas decirme tu nombre completo?"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

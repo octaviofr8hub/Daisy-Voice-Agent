@@ -1,0 +1,546 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_052c45165c23",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 buena onda tenerte! Soy Daisy, necesito unos datos para tu registro. \u00bfCu\u00e1l es tu nombre completo?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f1b89ea313d4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Juan P\u00e9rez."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2e0e4b011d5b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Juan. \u00bfEs correcto tu nombre completo: Juan P\u00e9rez?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a9dcbf283a3b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e0b136479642",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, Juan. Ahora, \u00bfpodr\u00edas proporcionarme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d6ea97c33558",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Benvidos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9ea7913dbd6d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias."
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_3b10b0ff91f4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Sentados."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9ef284243a35",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lamento"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_7fc4698f56fa",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ec28bb9a72ab",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por los datos. Entonces, \u00bfel n\u00famero de tu tractor es \"Treinta y dos\"?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a3ba6c1fe130",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_83606501065b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora necesito las placas de tu tractor, \u00bfme las podr\u00edas proporcionar por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_11dc509ebbb6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "MNA-14"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0cdd5f66cd17",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ochenta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d37951cebbc5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, entonces las placas de tu tractor son MNA-1480, \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b2668c28cf33",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Un son MNA."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_16f9dec470d6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ozan Gezila balay."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6e053c648d76",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo lamento, no comprend\u00ed la informaci\u00f3n de las placas. Por favor, \u00bfpodr\u00edas repetirlas asegur\u00e1ndote de que est\u00e9n en el formato correcto como ABC-1234 o XY-1234?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_bf1579d33581",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letraeme, letraene, letrae catorce ochenta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2ebef70986e7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por aclararlo. Entonces, las placas de tu tractor son MNE-1480. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_87dc37781e54",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_163b21383dc3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente, ahora necesito el n\u00famero de tu tr\u00e1iler, \u00bfme lo puedes proporcionar, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ed55e827903e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ochenta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3df02498e626",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Entonces, el n\u00famero de tu tr\u00e1iler es 80, \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_64798702b8ed",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_81d7ca0e0cf1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, por favor, \u00bfpodr\u00edas proporcionarme las placas de tu tr\u00e1iler?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7306bc1c43ce",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las placas son X."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1ff5f4a6592f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra A"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_29a07526cab4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra Z guion."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_af11ea6d4179",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Catorce veinticinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_57a851ac40f2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, entonces las placas de tu tr\u00e1iler son XAZ-1425. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_28275352a3a1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_31ca8d37c46f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Excelente! Ahora, \u00bfpodr\u00edas decirme tu ETA (hora estimada de llegada) en formato HH:MM?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_eb1326c58f83",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Cero cero treinta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6a07497a6be4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, \u00bfentonces tu ETA es 00:30? \u00bfEs correcto?"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_4e9b9f1f57a0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b95cf94ee297",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, casi terminamos. Por favor, \u00bfpodr\u00edas darme tu correo electr\u00f3nico?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b8f96fbb03ca",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Es la letra t min\u00fascula, n\u00famero cuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3561f6acaaec",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra u min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e04afa6ce568",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "de"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_fa94ffdc0d42",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_fd49f1e7ac4d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfQu\u00e9 tal?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e25e08e4d26c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo lamento, parece que no comprend\u00ed tu correo electr\u00f3nico. \u00bfPodr\u00edas decirlo de nuevo de manera m\u00e1s fluida?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d2571556bdba",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra min\u00fascula."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_20cd107042a9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_238e416f6b61",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra V n\u00famero cero."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2c31575ddf31",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra S y letra G."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_fb0f47b3b9e4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Todas las letras son min\u00fasculas."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9ed4775c847a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "arrobagmail.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_02de0b973961",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Entonces, tu correo electr\u00f3nico es t4v0sg@gmail.com. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0a2f35799902",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e50398ec74a4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Listo, Juan! Tus datos han sido guardados exitosamente. Si necesitas algo m\u00e1s, aqu\u00ed estoy para ayudarte. \u00a1Buen viaje!"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9df5e48fd6d8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, hasta luego."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_faa69f223efb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hasta luego, que tengas un excelente d\u00eda!"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_62e3ac857911",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La cola de la llamada pendeja."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

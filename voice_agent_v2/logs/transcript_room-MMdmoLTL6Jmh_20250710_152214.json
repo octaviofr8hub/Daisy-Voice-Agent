@@ -1,0 +1,566 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_1ddff6f7bbe7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\nHola, \u00a1qu\u00e9 buena onda tenerte! Soy Daisy, necesito unos datos para tu ruta. \u00bfCu\u00e1l es tu nombre completo?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6875763fc07e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Porcierto avi\u00f3n."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f663fcc0c7f3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entiendo, pero para continuar, necesito que me proporciones tu nombre completo, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6a6bb97fd14a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e18a5290aa28",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio. Ahora, \u00bfpuedes darme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_fd0f1b767a40",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y tres."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_037140017795",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, el n\u00famero de tu tractor es 33. Ahora, necesito las placas de tu tractor. Por favor, deletrea cada letra y n\u00famero para asegurarme de que lo registro correctamente."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e7b2267c6e6b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "dedededo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_87d5806088e2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Enfede Francia."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b3e4e52b9f8e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "I de iguana."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4a3dbe478341",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y cuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_41777ccfe75e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para confirmar, las placas del tractor son D de Dedo, F de Francia, I de Iguana, y 144. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d61221205c3a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tr\u00e1iler es 52."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5566006e001a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente, el n\u00famero de tu tr\u00e1iler es 52. Ahora, por favor, dame las placas del tr\u00e1iler, letra por letra y n\u00famero por n\u00famero."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_767acba5ff70",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "para el kilo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cad37080ef39",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "En el helado"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5df48a935e22",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ese de serpiente?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b0ff23d91b45",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "ciento sesenta y seis."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2e561c0ff8aa",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para confirmar, las placas del tr\u00e1iler son P de Pato, L de Luna, H de Helado, S de Serpiente, y 166. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4c6e3c189cd7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La letra S y el n\u00famero tambi\u00e9n, las primeras letras no."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8933e42bcb5e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por aclarar. \u00bfPodr\u00edas repetir las primeras letras, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9e2a5daca784",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Kabequino"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ec4dc91562df",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "L de luna."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ced26f8ddcc1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Entonces, para confirmar, las placas del tr\u00e1iler son K de Kilo, N de Nuez, L de Luna, S de Sol, y 166. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7b9dfcd3242c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hipertin la M."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2907d380eba0",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo corregimos."
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_4bcf4cb04044",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La eme."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_75219b9a3aed",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entiendo,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_11f065621db5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Laene, perd\u00f3n."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8eb5578a5189",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Est\u00e1 bien, gracias por aclararlo. Entonces, las placas del tr\u00e1iler son K de Kilo, M de Mano, L de Luna, S de Sol, y 166. \u00bfEs correcto ahora?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_eeb0ff95ed00",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Fil\u00e1eme."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8d873427e55a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_9156b7256801",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Miami."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4a9b2c4c9249",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La M."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_62940ef7580a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_b34f79da81a4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Sin la M."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_04b596ec98e0",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo corregimos sin la M. Entonces, las placas del tr\u00e1iler son K de Kilo, N de Nuez, L de Luna, S de Sol, y 166. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b2d38ee3924c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Tinlaene"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ed3a4c266dbb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Llaene."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_256cd2e76aeb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Inlaeme denue."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2d8024e1a7fe",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Corrigiendo, entonces las placas del tr\u00e1iler son K de Kilo, L de Luna, ultima letra N de Nuez, S de Sol, y 166. \u00bfEs correcto ahora?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0cc2b7e41717",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La M"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cbbbb00567ed",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_031d5e064620",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Kim"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a806674c3692",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Fin"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d3e89f6834dc",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Fin"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1e705c95fd74",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Fin."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_89094207c33f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Si la ene"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e1ae2f6487fd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Ahora"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_ab53082c0981",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "En la M."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_09edc0802288",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La ene nova."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7c36ab12386a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perd\u00f3n por la confusi\u00f3n. Lo intento de nuevo. Las placas del tr\u00e1iler son K de Kilo, N de Nuez, L de Luna, S de Sol, y"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_a68b26ce42f8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No Sinaemi"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d48ee3043a0c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfPor qu\u00e9 lo reconoces tan mal?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f47326af4290",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lamento la confusi\u00f3n, d\u00e9jame intentar de nuevo. Necesito las letras y los n\u00fameros individualmente: \u00bfpodr\u00edas deletrear las placas del tr\u00e1iler, una vez m\u00e1s, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_608940708af8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Cabecillo L de Luna."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_df27b270be0d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jefe de Francia."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a05e972a81c5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento por la confusi\u00f3n anterior. Intentemos de nuevo: las placas del tr\u00e1iler son K de Kilo, F de Francia, y el resto del"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

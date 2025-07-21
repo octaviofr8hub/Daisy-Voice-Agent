@@ -1,0 +1,28 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_c99e8c830441",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_82704071fc20",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ahorita no puedo, ll\u00e1mame en cinco segundos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": [
+    "[Reschedule] carrier requested callback on 5"
+  ]
+}

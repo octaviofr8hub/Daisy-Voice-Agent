@@ -1,0 +1,35 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_f0c385c4f62b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy, aqu\u00ed para tu registro de"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_9d368aaab5eb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S de Sapo, A de \u00c1ngel, gui\u00f3n, uno, tres, siete, nueve."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_31ec9c2e8d96",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por proporcionarme parte de un dato, pero necesito saber a qu\u00e9 corresponde:"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}

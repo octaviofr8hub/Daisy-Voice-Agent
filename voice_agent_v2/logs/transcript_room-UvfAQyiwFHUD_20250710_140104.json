@@ -1,0 +1,654 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_a94d4b4d9776",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          ""
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a89cf78158ee",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfPor qu\u00e9 no hablas de ti?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b62401012ef2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Estoy aqu\u00ed para ayudarte con el registro de transportistas de camiones. \u00bfTe gustar\u00eda que te ayude a completar el registro? Necesitar\u00eda algunos datos como tu nombre completo y la informaci\u00f3n de tu veh\u00edculo."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_eeaf9773b351",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7de950a2b7f4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Excelente! Comencemos con tu nombre completo, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_de9e99e0910e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_25fb51fbc600",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Ahora necesito tu n\u00famero de tractor, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_4ac0c37f8743",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3243616c1e61",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, ahora necesito que me proporciones las placas del tractor. Por favor, dime letra por letra y n\u00famero por n\u00famero."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9fbe22938f46",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Nitra."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4b1136e89073",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Be de burro?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0d34ad01d647",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "De dededo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_09934d6aa1dd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El elefante"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_35a9ba3d0149",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Guion"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ac95ec663fae",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y cuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e01bd59b5372",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. \u00bfLas placas del tractor son N de Nuez, B de Burro, D de Dedo, E de Elefante, gui\u00f3n, uno, cuatro, cuatro? \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a8253b4419eb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, pero va sin la n, lo dem\u00e1s est\u00e1 bien."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_75df64e36f56",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entiendo, las placas del tractor son B de Burro, D de Dedo, E de Elefante, gui\u00f3n, uno, cuatro, cuatro. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_093b8144eeb2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_1782a8387f2f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Perfecto! Ahora necesito el n\u00famero de tr\u00e1iler, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_233074ad2918",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Cincuenta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5845506fa97a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Ahora, por favor, dime las placas del tr\u00e1iler letra por letra y n\u00famero por n\u00famero."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_3364a93421a4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ave \u00e1guila."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3e4a1e588619",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Se ve casa?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_de375c3bf088",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_bab9e91251e6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfVives casa?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_84554234b21f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Por favor, confirmemos: \u00bfLas placas del tr\u00e1iler son A de \u00c1guila, C de Casa, V de Vaca, y luego los n\u00fameros por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1ce7fe7f270f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento veintid\u00f3s."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2da3780a02c4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Las placas del tr\u00e1iler son A de \u00c1guila, C de Casa, V de Vaca, gui\u00f3n, uno, dos, dos. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_38d8d656f505",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_df5a9f845b49",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, ahora necesito la fecha y hora estimada de llegada (ETA) de tu cami\u00f3n. \u00bfPodr\u00edas proporcion\u00e1rmelas, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_2664b8b88f3d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Es a las tres y cincuenta."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4b987d781145",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, \u00bfpodr\u00edas confirmar de qu\u00e9 d\u00eda es esa llegada?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_3234a7af24e9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, no quiero el d\u00eda, solamente la hora. Te equivocaste, es a las 13:50."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f6e3b58510a4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, la ETA es a las 13:50. Ahora, necesito tu correo electr\u00f3nico. Por favor, deletrea letra por letra."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_44efb8eb84f2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Te repito"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_52dcafcd1c90",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d43c8f33f395",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bebe vodka."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0129358adfd8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_95bf3f7c0e48",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ese de serpiente"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_22cf70562fc6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hije de gato."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8cebe8851ca1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. El correo electr\u00f3nico que tengo hasta ahora es: 4, B de Burro, V de Vaca, 0, S de Sol, y H de Hacha. Necesito que contin\u00faes con el resto, por favor."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_748528f46849",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "De hecho est\u00e1 mal como lo dijiste."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b211f2ec69fa",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento, vamos a corregirlo. Por favor, volvamos a empezar. Dime de nuevo el correo electr\u00f3nico letra por letra."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f982da357af2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "TV Tractor"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_64bf4e12f61d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7e25326f2e44",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bebe vaca."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a46d04eea2d6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4a77e96adc13",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfSe ve gato?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8f7374fa866d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "arroba gmail punto com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_192e4bf326ad",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, ahora confirmemos: \n\nEl correo electr\u00f3nico es T de Tigre, V de Vaca, 4, B de Burro, V de Vaca, 0, C de Casa, G de Gato, arroba gmail punto com. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ce7a47b6dc77",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Est\u00e1 mal, sigue estando mal."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4ce14765dedc",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento mucho por la confusi\u00f3n, vamos a intentarlo de nuevo. Por favor, empecemos otra vez. Deletrea tu correo electr\u00f3nico letra por letra, comenzando con la primera parte antes del arroba."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b332df534021",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "de tigre,"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_aa0d690c096b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ed6f796a5294",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_e97e458bb64b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bebe vaca?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_384ecf9f8f9e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "N\u00famero cero."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0e8f04ce437c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ese de serpiente?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3734071ecd59",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "G de gato."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_713648aed430",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, ahora tengo:\n\nT de Tigre, 4, B de Burro, V de Vaca, 0, S de Sol, G de Gato.\n\nAhora, \u00bfpuedes confirmar la parte despu\u00e9s del arroba, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9d438130f295",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "O tambi\u00e9n est\u00e1 bien la parte antes de la arroba, solo que no va la b de burro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0b33146746ac",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y lo que sigue despu\u00e9s es arroba gmail punto com."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_bd6919f183d1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, ahora s\u00ed lo tengo:\n\nT de Tigre, 4, V de Vaca, 0, S de Sol, G de Gato, arroba gmail punto com.\n\n\u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_79c0e0e37efa",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a1e0ca86eff8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Tus datos han sido guardados exitosamente. Si necesitas m\u00e1s ayuda o informaci\u00f3n, no dudes en dec\u00edrmelo. \u00a1Buen viaje!"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e82752a645d2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jajaja"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

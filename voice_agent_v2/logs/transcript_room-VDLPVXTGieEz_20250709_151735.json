@@ -1,0 +1,463 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_69ed981026d8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f6ae342dc383",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio Nicol\u00e1s D\u00edaz."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_85913461991d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio Nicol\u00e1s D\u00edaz. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ccc49deeaa1b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_384d5ca61047",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_be711b312448",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c8479909b000",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, \u00bfme podr\u00edas proporcionar el n\u00famero del tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_804b29f1a3bd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero de factores 32."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e0844143dc36",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para confirmar, \u00bfel n\u00famero de tractor es 32, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_517c31df275a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_aec8699e7802",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por la confirmaci\u00f3n. Ahora, \u00bfme podr\u00edas dar las placas del tractor, por favor? Recuerda deletrearlas letra por letra, seguido de los n\u00fameros."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f533b87acfec",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las placas del tractor"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3732f9b34e7b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Son letra M, letra F, letra E, ciento veintid\u00f3s."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_437a0789fed4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Para confirmar, \u00bflas placas del tractor son MFE-122, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_10311a3cffd4",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c12ac6473910",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, \u00bfpodr\u00edas darme el n\u00famero del tr\u00e1iler, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1fa4d116f6d7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tr\u00e1iler es 84."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_63872bbc0ee2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. \u00bfEl n\u00famero del tr\u00e1iler es 84, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_5930c2a97004",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9c80a5dc4a83",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Excelente. Ahora, \u00bfpodr\u00edas darme las placas del tr\u00e1iler, por favor? Recuerda deletrearlas letra por letra, seguido de los n\u00fameros."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6cc46552bcb2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra K, letra J, letra M"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0b5eff2e546d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Perfecto! Ahora solo faltan los n\u00fameros de las placas del tr\u00e1iler. \u00bfPodr\u00edas proporcion\u00e1rmelos, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_63084d861d3f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y cuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_dde8a4f9c743",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Entonces, \u00bflas placas del tr\u00e1iler son KJM-144, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_21671d974c2a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4eddbedb3b99",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Muy bien. Ahora, \u00bfpodr\u00edas darme la hora estimada de llegada (ETA) por favor? Recuerda que el formato es HH:MM."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_aaca531d0c32",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Siete cuarenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cda6c430bde2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. \u00bfLa ETA es a las 07:45, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_84aea1b99b6d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, diecisiete cuarenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3dfc97ea85c6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por la correcci\u00f3n. \u00bfEntonces la ETA es a las 17:45, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_39f786328ee9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, esa l\u00e1piz es diferente del cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2a02f54ea9c5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_979e257eec2d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No al 27 con un 25."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6ca645952144",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento, parece que"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_2c88e0adeca6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_51f61561e487",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, la ETA es a las 17:45. Ahora, por \u00faltimo,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_a8bc748c68e1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Siesta ahora."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2ed4305fd079",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Entonces, \u00bfla ETA es a las 16:45, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0b7a70ba0ce5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Se\u00f1or"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a26b00c50c8c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Mis disculpas por la confusi\u00f3n anterior. Vamos a asegurarnos de que todo est\u00e9 bien. \u00bfLa ETA es a las 16:45, correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7caa3c28f535",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, diecisiete cuarenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4e2c1da8676f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_4f8f55e9976f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Un r\u00edo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_7d674c0d3a1a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lamento la confusi\u00f3n. \u00bfPodr\u00edas confirmarme si la ETA es a las 17:45 as\u00ed puedo proceder adecuadamente?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_8950c06cd4dd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bienvenidos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_4b7a3aad475e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por tu paciencia. Ahora, para completar tu"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_d20444317a78",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "que tiene."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2822d0b524f8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lamento la confusi\u00f3n, trabajemos para tener todo en orden. La ETA es a las 17:45, correcto?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

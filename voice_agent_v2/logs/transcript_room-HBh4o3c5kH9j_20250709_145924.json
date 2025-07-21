@@ -1,0 +1,149 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_f2da4c183a67",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7bc72826a250",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio Nicol\u00e1s D\u00edaz."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e09a7bf35d4f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio Nicol\u00e1s D\u00edaz. \u00bfPodr\u00edas confirmarme el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d38fbb318cc7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tractor es treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b815a48082e8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, entonces el n\u00famero de tu tractor es 32. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_c7fc952b0fc6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2f9d90473a5c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, \u00bfy me puedes proporcionar las placas de tu tractor, por favor? Recuerda que puedes deletrear as\u00ed: Letra A, letra B, letra C y seguido de los n\u00fameros."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_25579c8811e3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las placas son letra P, letra A, letra C, ciento veinticuatro."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2a64888f6295",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, las placas de tu tractor son PAC-0124. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_aec091ea9cf5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, la \u00fanica letra que est\u00e1 mal es la P. Ser\u00eda la letra P."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_e7a75c750ee4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Gracias por la correcci\u00f3n! Entonces, las placas son PAC-0124. \u00bfEs correcto ahora?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_410051564d81",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No, ser\u00eda la letra T."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c8171a62867f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por aclararlo, entonces las placas de tu tractor son TAC-0124. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7c91fa64db28",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0e0de4e2ed8e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, ahora por favor, me podr\u00edas dar el n\u00famero de tu tr\u00e1iler."
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

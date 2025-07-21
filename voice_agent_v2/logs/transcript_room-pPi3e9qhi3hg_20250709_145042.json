@@ -1,0 +1,151 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_f20fc260f63a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_08a22394f592",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio Nicol\u00e1s D\u00edaz."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_73ab0c9fd465",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio Nicol\u00e1s D\u00edaz. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_591dd1ac2a7b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_de2381a8e50b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. Ahora, \u00bfme podr\u00edas dar el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_35a73e3414a0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "El n\u00famero del tractor es treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9ea9c5a1142d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Entonces el n\u00famero de tu tractor es 32, \u00bfcorrecto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_30e60bbb13a0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "De acuerdo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_937c36e57ec5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, estar\u00eda."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_212835e40493",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por confirmar. Ahora, \u00bfme podr\u00edas proporcionar las placas del tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e5749c93b3e9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Las placas son M"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_146683ce81dd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Eini Gracias."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c31964327fb1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0ac444dc7197",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Para confirmar, las placas de tu tractor ser\u00edan MEN-144, \u00bfes correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_dad675cf17fe",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Fin."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

@@ -1,0 +1,323 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_749633eb7927",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\n\u00a1Ey, qu\u00e9 tal! Soy Daisy, vamos a completar tu registro. Primero, dime tu nombre completo, \u00bfvale?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_8d0f4d5c2ff0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a0acbcc005f8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio. Ahora, \u00bfcu\u00e1l es el n\u00famero de tu tractor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d79ddfb5e15f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_306ecd2c4efb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, \u00bfcu\u00e1les son las placas de tu tractor? Por favor, deletrea letra por letra y n\u00famero por n\u00famero."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_5f386da5f1bd",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ve de dedo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_99df52c3499c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "cada kilo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b3a24d2efcd0",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bf\u00c9l ve luna?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6f49d0850af2",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cuarenta y cuatro"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_0667a5a6c167",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, las placas de tu tractor ser\u00edan: D de Dedo, K de Kilo, L de Luna, uno, cuatro, cuatro. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_be8a3f2da734",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ed30823a5e99",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Genial, ahora, \u00bfcu\u00e1l es tu ETA (tiempo estimado de llegada)?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b00b4f7b5d69",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Diecisiete cuarenta y cinco"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_de4ecca05169",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Anotado, diecisiete cuarenta y cinco. Ahora necesito tu correo electr\u00f3nico, por favor, deletre\u00e1ndolo letra por letra."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_19ae7ac5aa6d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi correo es jorgeoctavionicolasdiaz@gmail.com"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_9c0bba728aa6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, por favor, deletrea tu correo electr\u00f3nico letra por letra para asegurarme de que lo tengo correcto."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_6af50fa96529",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto. \u00bfMe lo puedes decir?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_813dba974c93",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Para comprobar que es correcto?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3ea247f11bc7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Claro, aqu\u00ed tienes: \n\nJ de Jota, O de Oso, R de Rana, G de Gato, E de Elefante, O de Oso, C de Casa, T de Tigre, A de \u00c1guila, V de Vaca, I de Iguana, O de Oso, N de Nuez, I de Iguana, C de Casa, O de Oso, L de Luna, A de \u00c1guila, S de Sol, D de Dedo, I de Iguana, A de \u00c1guila, Z de Zapato, arroba, G de Gato, M de Mano, A de \u00c1guila, I de Iguana, L de Luna, punto, C de Casa, O de Oso, M de Mam\u00e1.\n\n\u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_b6a623d888ad",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8e98cee9810b",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Excelente! Ahora, solo falta una cosa: las placas de tu tr\u00e1iler, \u00bfpuedes deletrearlas, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0aeb98ecb770",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "L de luna."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_c6e01ef110ec",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ar\u00e9aguila."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_98d4351db6a9",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Es de Francia."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2b2ece8a2867",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Hasta ahora tenemos: L de Luna, A de \u00c1guila, y E de Elefante. \u00bfCu\u00e1l es la siguiente letra o n\u00famero en las placas de tu tr\u00e1iler?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_8c1e959ca3e5",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No es la letra E, es la letra F, y los n\u00fameros son 122."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b5d370eb28d7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Mis disculpas por el error. Entonces, las placas de tu tr\u00e1iler son: L de Luna, A de \u00c1guila, F de Foco, uno, dos, dos. \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f4f21133b48d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, es correcto."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cda9d3424ef4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Perfecto! Ahora tengo toda la informaci\u00f3n que necesitamos:\n\n- Nombre: Jorge Octavio\n- N\u00famero de Tractor: 32\n- Placas del Tractor: DKL-144\n- ETA: 17:45\n- Correo Electr\u00f3nico: jorgeoctavionicolasdiaz@gmail.com\n- Placas del Tr\u00e1iler: LAF-122\n\nVoy a guardar estos datos ahora. Un momento, por favor. \n\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7c16b0c2e5e1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Listo! Tus datos han sido guardados exitosamente. \u00bfHay algo m\u00e1s en lo que te pueda ayudar?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f6fa660e1e92",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Nosferatu."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f338372bf3cb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Si necesitas algo m\u00e1s o tienes alguna pregunta, aqu\u00ed estoy para ayudarte. \u00a1Que tengas un excelente d\u00eda!"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_73c4297e209d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Gracias igualmente, hasta luego."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

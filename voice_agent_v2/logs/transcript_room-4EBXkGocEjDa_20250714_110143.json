@@ -1,0 +1,38 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_b9c91606268a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfY bueno?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_f46b4aaf275a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, hablando de parte de Freight Technologies. Estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1562064f5e77",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ll\u00e1mame en diez segundos, por favor."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": [
+    "[Reschedule] carrier requested callback on 10"
+  ]
+}

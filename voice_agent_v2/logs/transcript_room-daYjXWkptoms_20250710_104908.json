@@ -1,0 +1,172 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_3da52f5efcd8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Soy Daisy, aqu\u00ed para tu registro de carrier. \u00bfMe das tu nombre completo, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e26977c42a3c",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Juan P\u00e9rez."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cff8ed8283cb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Juan P\u00e9rez. Ahora, \u00bfme puedes proporcionar el n\u00famero de tu tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_88098e8d935e",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y tres"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_8d27a4ecfb7e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto, el n\u00famero de tu tractor es 33. Ahora, \u00bfpuedes decirme las placas de tu tractor, por favor? Deletr\u00e9alo utilizando palabras clave."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_06aa21f4a868",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfPor qu\u00e9 te tardas tanto?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_901f65b638d5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lamento si me estoy tomando un poco de tiempo. Estoy aqu\u00ed para asegurarme de que todos los detalles sean correctos. \u00bfPodr\u00edas proporcionarme las placas de tu tractor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a4de6bfe7f57",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "De dededo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_92e05632b61f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfTe detito?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_d7c690f2b02f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "No hay problema,"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_7e0f9a4d63f8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Eres pito, pendejo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_fc7c2880fcbe",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Lo siento si ha habido alguna confusi\u00f3n. Estoy aqu\u00ed para ayudarte. \n\nPara continuar, \u00bfpodr\u00edas proporcionarme las placas de tu tractor usando palabras clave?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_87fb203ad08d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfDebe dedo?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b1cbf0592186",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bebe, bebo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6d50a1f8dd24",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00bfTe refieres a las"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_635fcc593681",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yo"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_15a04282d346",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yo Santo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": [
+    "[Complaint] carrier: User was disrespectful during the interaction, using inappropriate language."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_b33e95459e5e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\nHola, \u00a1qu\u00e9 buena onda tenerte! Soy Daisy, necesito unos datos para tu ruta. \u00bfCu\u00e1l es tu nombre completo?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_f66abd606b2d",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No puedo atenderte ahorita, ll\u00e1mame en cinco segundos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": [
+    "[Reschedule] carrier requested callback on 5"
+  ]
+}

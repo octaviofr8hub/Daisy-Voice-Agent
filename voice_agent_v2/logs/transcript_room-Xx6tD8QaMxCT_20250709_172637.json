@@ -1,0 +1,73 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_47c3508afcd8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_7975482580db",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Jorge Octavio"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_bc058d91832c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge. Ahora, \u00bfme podr\u00edas decir el n\u00famero de tu tractor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ec031e430bd3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Treinta y dos."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b59f31a1d291",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias. Solo para confirmar, \u00bfel n\u00famero de tu tractor es 32?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_1032d1f42118",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "dice trece"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_6fb05705747e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias por aclararlo. Entonces, \u00bfel n\u00famero de tu tractor es 13, correcto?"
+        ],
+        "interrupted": false
+      }
+    ]
+  },
+  "custom_log": []
+}

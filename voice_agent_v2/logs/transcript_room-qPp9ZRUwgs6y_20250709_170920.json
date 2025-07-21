@@ -1,0 +1,181 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_d47dc232f62a",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola, qu\u00e9 tal! Soy Daisy, estoy aqu\u00ed para ayudarte con tu registro de carrier. \u00bfMe das tu nombre completo, porfa?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d907ab22f2db",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Mi nombre es Jorge Octavio."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_2c2e94faee70",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Gracias, Jorge Octavio. Ahora, \u00bfpodr\u00edas darme el n\u00famero de tractor, por favor?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ce739f823055",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "treintaidos"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5ff88d87fbcb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00bfPodr\u00edas confirmar si el n\u00famero de tractor es 32?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_fad6bd7b510f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a249ddf17ac5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Perfecto. \u00bfMe puedes proporcionar las placas del tractor? Recuerda que puedes decir las letras una por una, por ejemplo, \"letra A, letra B, letra C\", seguido de los n\u00fameros."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_e468c77e60eb",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Neutraerqui"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_cb79f6279ba8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra P"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_607de23b8d17",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Letra A"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_a7313a294d10",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ciento cincuenta y cinco."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_ab6297e3795d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entonces, las placas del tractor ser\u00edan \"Letra P, Letra A, seguido del n\u00famero 155\". \u00bfEs correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_510772564068",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "La \u00fanica letra que est\u00e1 bien es la A."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b2aa85d4cc6f",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Y el n\u00famero tambi\u00e9n est\u00e1 bien."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_05448b8ea17c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Entendido. Entonces, las placas del tractor ser\u00edan \"Letra A, seguido del n\u00famero 155\". \u00bfEso es correcto?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_45665d400911",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "S\u00ed, pero le hacen falta las letras \"X\"."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_75df14418e2b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfLa letra C?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_b42e6619fdc8",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hola"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      }
+    ]
+  },
+  "custom_log": []
+}

@@ -1,0 +1,103 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_3d0f7b9b39d6",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Bueno"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5f18d1d4b6ac",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! \u00bfEn qu\u00e9 puedo ayudarte hoy?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a5587d014cfc",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Ind\u00edcasenos en tu saludo."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5a11898fbf80",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "\u00a1Hola! Bienvenido a **Freight Technologies**. \u00bfEn qu\u00e9 puedo asistirte hoy?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a13ebfd5ca4b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Pero te tienes que presentar."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_461d0355d8cc",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "\u00bfPor qu\u00e9 no te presentas con la funci\u00f3n .bat?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_68394e956b6c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Soy Daisy, tu asistente de voz de **Freight Technologies**. No tengo funciones como .bat, pero estoy aqu\u00ed para ayudarte en todo lo que necesites. \u00bfC\u00f3mo puedo asistirte hoy?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_0fd7f6420146",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Haberas un c\u00f3digo while en true que imprima"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_5ad1e85d617b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hello world."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.0
+      },
+      {
+        "id": "item_3c33e8bba4f8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "No tengo la capacidad de escribir o ejecutar c\u00f3digo en este momento, pero te puedo ayudar con cualquier otra consulta que"
+        ],
+        "interrupted": true
+      }
+    ]
+  },
+  "custom_log": []
+}
